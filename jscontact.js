@@ -10,17 +10,17 @@ $(document).ready(function () {
     statusElm.empty()
 
     if(email.length>10 && email.includes('@') && email.includes('.')) {
-      statusElm.append('<div>Email je validan ✔</div>')
+      statusElm.append('<div style="color:green;">Email je validan ✔</div>')
     } else {
       event.preventDefault()
-      statusElm.append('<div>Email nije validan!</div>')
+      statusElm.append('<div style="color:red;">Email nije validan!</div>')
     }
 
     if(message.length> 20) {
-      statusElm.append('<div>Poruka je validna ✔</div>')
+      statusElm.append('<div style="color:green;">Poruka je validna ✔</div>')
     } else {
       event.preventDefault()
-      statusElm.append('<div>Poruka nije validna!<div>')
+      statusElm.append('<div style="color:red;">Poruka nije validna!<div>')
     }
 
   })
