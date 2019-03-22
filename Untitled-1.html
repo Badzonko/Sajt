@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="./jscontact.js"></script>
   </head>
   <style>
   html {
@@ -23,6 +24,9 @@ z-index: 0;
   }
   h2{
     text-align: center;
+  }
+  label, input, textarea{
+    display: block;
   }
   </style>
   <body>
@@ -40,8 +44,8 @@ z-index: 0;
           </button>
           <div id="navbarNavDropdown" class="navbar-collapse collapse">
               <ul class="navbar-nav mr-auto">
-                
-  
+
+
               </ul>
               <ul class="navbar-nav">
                   <li class="nav-item opacity">
@@ -54,7 +58,7 @@ z-index: 0;
                       <a class="nav-link" href="#">O nama</a>
                   </li>
                   <li class="nav-item opacity">
-                      <a class="nav-link" href="#">Kontakt</a>
+                      <a class="nav-link" href="#Kontakt">Kontakt</a>
                   </li>
               </ul>
           </div>
@@ -76,7 +80,7 @@ z-index: 0;
             <li data-target="#demo" data-slide-to="1"></li>
             <li data-target="#demo" data-slide-to="2"></li>
           </ul>
-          
+
           <!-- The slideshow -->
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -89,7 +93,7 @@ z-index: 0;
               <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="New York" width="1100" height="500">
             </div>
           </div>
-          
+
           <!-- Left and right controls -->
           <a class="carousel-control-prev" href="#demo" data-slide="prev">
             <span class="carousel-control-prev-icon"></span>
@@ -100,8 +104,36 @@ z-index: 0;
         </div>
     </div>
   </div>
-  
+
 </div>
+
+<!--kontakt forma-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 ">
+      <h1 id="Kontakt">Kontakt forma</h1>
+      <form action="https://formspree.io/nasmejl@email.com" method="POST"> <!--ovde stavimo nas mejl posle-->
+        <label>
+          E-mail
+          <input type="email" class="email" name="email">
+        </label>
+        <label>
+          Naslov
+          <input type="text" class="subject" name="naslov">
+        </label>
+        <label>
+          Poruka
+          <input type="text" class="message" name="poruka">
+        </label>
+        <div class="status">
+
+        </div>
+        <button type="submit" class="submit" value="Send">Posalji</button>
+      </form>
+    </div>
+  </div>
+</div>
+<!--kraj kontakt forme-->
 
 
 
