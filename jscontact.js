@@ -6,21 +6,32 @@ $(document).ready(function () {
 
     var email = $('.email').val()
     var message = $('.message').val()
-    var statusElm = $('.status')
-    statusElm.empty()
+    var fname = $('.fname').val()
+    var statusElmImp = $('.statusImp')
+    var statusElmMs = $('.statusMs')
+    statusElmImp.empty
+    statusElmMs.empty
 
-    if(email.length>10 && email.includes('@') && email.includes('.')) {
-      statusElm.append('<div style="color:green;">Email je validan ✔</div>')
+    if(fname.length>6 && fname.includes(' ')){
+      //statusElm.append('<div style="color:green;">Ime i prezime su validni ✔</div>')
+      document.getElementById("imp").style.border= "2px solid green"
     } else {
       event.preventDefault()
-      statusElm.append('<div style="color:red;">Email nije validan!</div>')
+      //statusElmImp.append('<div style="color:red;">Unesite puno ime i prezime!</div>')
+      alert('Unesite puno ime i prezime!')
+      document.getElementById("imp").style.border= "2px solid red"
     }
 
+
     if(message.length> 20) {
-      statusElm.append('<div style="color:green;">Poruka je validna ✔</div>')
+      //statusElm.append('<div style="color:green;">Poruka je validna ✔</div>')
+      document.getElementById("ms").style.border= "2px solid green"
     } else {
       event.preventDefault()
-      statusElm.append('<div style="color:red;">Poruka nije validna!<div>')
+      statusElmMs.empty
+      //statusElmMs.append('<div style="color:red;">Poruka mora biti dugačka barem 20 karaktera!<div>')
+      alert('Poruka mora biti dugačka barem 20 karaktera!')
+      document.getElementById("ms").style.border= "2px solid red"
     }
 
   })

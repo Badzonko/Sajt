@@ -28,6 +28,20 @@ z-index: 0;
   label, input, textarea{
     display: block;
   }
+  #Kontakt {
+    text-align: center;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 2px solid #D3D3D3;
+  }
+  .submit {
+    width: 100%;
+  }
   </style>
   <body>
     <!--POCETAK NAVIGACIONOG BARA-->
@@ -111,24 +125,31 @@ z-index: 0;
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-12 ">
-      <h1 id="Kontakt">Kontakt forma</h1>
-      <form action="https://formspree.io/nasmejl@email.com" method="POST"> <!--ovde stavimo nas mejl posle-->
+      <h1 id="Kontakt">Kontaktirajte nas</h1>
+      <form action="https://formspree.io/nasmejl@email.com" method="POST" class="kontaktforma"> <!--ovde stavimo nas mejl posle-->
         <label>
-          E-mail
-          <input type="email" class="email" name="email">
+          *Ime i prezime
+          <input type="text" class="fname" name="imeprezime" id="imp"> <!--fname= full name-->
         </label>
         <label>
-          Naslov
-          <input type="text" class="subject" name="naslov">
+          E-mail ili broj telefona
+          <input type="email" class="email" name="email" id="em">
         </label>
         <label>
-          Poruka
-          <textarea class="message" name="poruka"></textarea>
+          *Poruka
+          <textarea class="message" name="poruka" rows="4" id="ms"></textarea>
         </label>
-        <div class="status">
-          <!--ovde pise da li je validno-->
+        <div class="statusImp">
+          <!--ovde pise da li je validno ime i prezime-->
         </div>
-        <button type="submit" class="submit" value="Send">Posalji</button>
+        <div class="statusMs">
+          <!--ovde pise da li je validna poruka-->
+        </div>
+        <button type="submit" class="submit btn btn-dark" value="Send">Posalji</button>
+        <br>
+        <br>
+        <h6 style="font-size:0.8em;">*Obavezna polja</h6>
+        <h6 style="font-size:0.8em">Odgovaramo u roku od 2h!</h6>
       </form>
     </div>
   </div>
