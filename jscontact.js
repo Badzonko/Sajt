@@ -9,48 +9,44 @@ $(document).ready(function () {
     var fname = $('.fname').val()
     var statusElmImp = $('.statusImp')
     var statusElmMs = $('.statusMs')
-    statusElmImp.empty
-    statusElmMs.empty
+    //statusElmImp.empty
+    //statusElmMs.empty
 
-    if(fname.length>6 && fname.includes(' ')){
-      //statusElm.append('<div style="color:green;">Ime i prezime su validni ✔</div>')
+    if(fname.length>6 && fname.includes(' ')){ //ako ime i prezime imaju ukupno bar 6 karaktera i razmak izmedju ok je, polje dobija zeleni border
       document.getElementById("imp").style.border= "2px solid green"
-    } else {
+    } else { //ako ime i prezime nemaju bar 6 karaktera nije ok, crveni border i poruka
       event.preventDefault()
-      //statusElmImp.append('<div style="color:red;">Unesite puno ime i prezime!</div>')
       alert('Unesite puno ime i prezime!')
       document.getElementById("imp").style.border= "2px solid red"
     }
 
 
-    if(message.length> 20) {
-      //statusElm.append('<div style="color:green;">Poruka je validna ✔</div>')
+    if(message.length> 20) { //ako sadrzaj poruke ima bar 20 karaktera ok je, polje dobija zeleni border
       document.getElementById("ms").style.border= "2px solid green"
-    } else {
+    } else { //ako nema bar 20 karaktera onda nije ok, crveni border i poruka
       event.preventDefault()
       statusElmMs.empty
-      //statusElmMs.append('<div style="color:red;">Poruka mora biti dugačka barem 20 karaktera!<div>')
       alert('Poruka mora biti dugačka barem 20 karaktera!')
       document.getElementById("ms").style.border= "2px solid red"
     }
 
   })
 })
-$(document).ready(function(){
+$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
   $("#add").click(function(){
       document.getElementById("pk").style.color = "black"
       //$('#pk').html('Veliki paket');
       document.getElementById("pk").value = "Veliki paket";
   });
 });
-$(document).ready(function(){
+$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
   $("#adding").click(function(){
       document.getElementById("pk").style.color = "black"
       //$('#pk').html('Srednji paket');
       document.getElementById("pk").value = "Srednji paket";
   });
 });
-$(document).ready(function(){
+$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
   $("#added").click(function(){
       document.getElementById("pk").style.color = "black"
       //$('#pk').html('Mini paket');
@@ -58,7 +54,7 @@ $(document).ready(function(){
   });
 });
 
-function chg(){
+function chg(){ //vraca boju teksta u 'paket' polju na crnu i brise default tekst "Unesite broj..."
   document.getElementById("pk").style.color = "black";
   if(document.getElementById("pk").value==="Unesite paket koji želite"){
     document.getElementById("pk").innerHTML="";
