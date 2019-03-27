@@ -36,3 +36,20 @@ $(document).ready(function () {
 
   })
 })
+$(document).ready(function(){
+  $("#add").click(function(){
+      $('#ms').html('Veliki paket');
+  });
+});
+$(document).ready(function(){
+  $("#adding").click(function(){
+      $('#ms').html('Srednji paket');
+  });
+});
+$(document).ready(function(){
+  $("#added").click(function(){
+      $('#ms').html('Mini paket');
+  });
+});
+
+
