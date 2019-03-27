@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -72,7 +72,7 @@
   padding:5%;
 }
   .flip-card {
-    
+
   background-color: transparent;
   width: 300px;
   height: 400px;
@@ -115,7 +115,7 @@
   color: white;
   transform: rotateY(180deg);
 }
-  
+
   </style>
   <body>
     <!--POCETAK NAVIGACIONOG BARA-->
@@ -162,8 +162,8 @@
     <div class="col-sm-12 ">
       <h1 class="pocetna" id="Pocetna">Pocetna</h1>
       <hr/>
-      
-      
+
+
         </div>
     </div>
   </div>
@@ -190,13 +190,13 @@
               </div>
               <div class="flip-card-back">
                 <h1>Mini paket</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Quisque sapien velit, aliquet eget commodo nec, auctor a sapien.
                    Nam eu neque vulputate diam rhoncus faucibus. Curabitur quis varius libero. Lorem.</p>
                    <a href="#Kontakt"><input type="button" class="btn btn-warning" value="Porucite" id="added"/></a>
               </div>
             </div>
-          </div> 
+          </div>
     </div>
     <div class="col-sm-4" id="kartice">
         <div class="flip-card">
@@ -207,13 +207,13 @@
               </div>
               <div class="flip-card-back">
                 <h1>Srednji paket</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Quisque sapien velit, aliquet eget commodo nec, auctor a sapien.
                      Nam eu neque vulputate diam rhoncus faucibus. Curabitur quis varius libero. Lorem.</p>
                      <a href="#Kontakt"><input type="button" class="btn btn-warning" value="Porucite" id="adding"/></a>
               </div>
             </div>
-          </div> 
+          </div>
       </div>
       <div class="col-sm-4" id="kartice">
           <div class="flip-card">
@@ -224,16 +224,16 @@
                 </div>
                 <div class="flip-card-back">
                   <h1>Big paket</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Quisque sapien velit, aliquet eget commodo nec, auctor a sapien.
                        Nam eu neque vulputate diam rhoncus faucibus. Curabitur quis varius libero. Lorem.</p>
                   <a href="#Kontakt">
                     <input type="button" class="btn btn-warning" value="Porucite" id="add"/></a>
                 </div>
               </div>
-            </div> 
+            </div>
         </div>
-       
+
   </div>
 </div>
 
@@ -262,8 +262,12 @@
           <input type="email" class="email" name="email" id="em">
         </label>
         <label>
+          Paket
+          <textarea class="paket" name="paket" id="pk" rows="1" style="color:grey"  onclick="chg()">Unesite paket koji želite</textarea>
+        </label>
+        <label>
           *Poruka
-          <textarea class="message" name="poruka" rows="4" id="ms" ></textarea>
+          <textarea class="message" name="poruka" rows="4" id="ms"></textarea>
         </label>
         <div class="statusImp">
           <!--ovde pise da li je validno ime i prezime-->

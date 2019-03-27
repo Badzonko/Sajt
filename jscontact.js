@@ -38,18 +38,29 @@ $(document).ready(function () {
 })
 $(document).ready(function(){
   $("#add").click(function(){
-      $('#ms').html('Veliki paket');
+      document.getElementById("pk").style.color = "black"
+      //$('#pk').html('Veliki paket');
+      document.getElementById("pk").value = "Veliki paket";
   });
 });
 $(document).ready(function(){
   $("#adding").click(function(){
-      $('#ms').html('Srednji paket');
+      document.getElementById("pk").style.color = "black"
+      //$('#pk').html('Srednji paket');
+      document.getElementById("pk").value = "Srednji paket";
   });
 });
 $(document).ready(function(){
   $("#added").click(function(){
-      $('#ms').html('Mini paket');
+      document.getElementById("pk").style.color = "black"
+      //$('#pk').html('Mini paket');
+      document.getElementById("pk").value = "Mali paket";
   });
 });
 
-
+function chg(){
+  document.getElementById("pk").style.color = "black";
+  if(document.getElementById("pk").value==="Unesite paket koji želite"){
+    document.getElementById("pk").innerHTML="";
+  }
+}
