@@ -56,7 +56,7 @@ $(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani pa
 
 function chg(){ //vraca boju teksta u 'paket' polju na crnu i brise default tekst "Unesite broj..."
   document.getElementById("pk").style.color = "black";
-  if(document.getElementById("pk").value==="Unesite paket koji želite"){
+  if(document.getElementById("pk").value==="Unesite paket koji želite ili ga izaberite na stranici Ponuda"){
     document.getElementById("pk").innerHTML="";
   }
 }
