@@ -13,117 +13,40 @@
     <script src=""></script>
   </head>
   <style>
-  html {
+html{
   scroll-behavior: smooth;
 }
-  body{
-     z-index: 0;
-     -webkit-font-smoothing: antialiased;
-     text-rendering: optimizeLegibility;
-     font-family: 'Overpass', sans-serif;
-     letter-spacing: 0px;
-     font-size: 17px; color: #8d8f90;
-     font-weight: 400;
-     line-height: 32px;
-    /*background-image: url("light4.jpg");*/
-    background-color:  #efefef;
-  }
-  /*.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999;
-}*/
-  #logo_top{
-    width: 50%;
-  }
-
-
-  h1  {
-    text-align: center;
-  }
-  label, input, textarea{
-    display: block;
-    color: #222;
-  }
-  #Kontakt {
-    text-align: center;
-  }
-  #Onama{
-    text-align: center;
-  }
-  input, textarea {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 4px;
-    border: 1px solid #222;
-  }
-  .submit {
-    width: 100%;
-  }
-  footer {
-    width: 100%;
-    background-color:  #222;
-    padding: 5%;
-    border-color: #080808;
-  }
-  .logoH {
-    width: 50px;
-    margin-top: -5px;
-    margin-bottom: -5px;
-  }
-  .logoF {
-    width:95px;
-    margin-top: 15px;
-    opacity: 0.8;
-    transition: 0.3s;
-  }
-  .logoF:hover{
-    opacity:1;
-  }
-  .mailF{
-    width:95px;
-    margin-top:15px;
-    opacity: 0.8;
-    transition: 0.3s;
-  }
-  .mailF:hover {
-    opacity:1;
-  }
-  .up {
-    width: 85px;
-    opacity: 0.6;
-    margin-top: 20px;
-    transition: 0.3s;
-  }
-
-  .up:hover {
-    opacity: 0.8;
-  }
-
-  .up:active {
-    width: 95px;
-    margin-top: 15px;
-    margin-bottom: -5px;
-  }
-  .ponudica{
-    text-align: center;
-  }
+body{
+  z-index: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: 'Overpass', sans-serif;
+  letter-spacing: 0px;
+  font-size: 17px; color: #8d8f90;
+  font-weight: 400;
+  line-height: 32px;
+  background-color:  #efefef;
+}
+.logoH {
+  width: 50px;
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+#logo_top{
+  width: 50%;
+}
+.ponudica{
+  text-align: center;
+}
 #kartice {
   padding:5%;
 }
-  .flip-card {
-
+.flip-card {
   background-color: transparent;
   width: 300px;
   height: 400px;
   perspective: 1000px;
-   /* Remove this if you don't want the 3D effect */
 }
-
-/* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -132,13 +55,9 @@
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
-
-/* Position the front and back side */
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
@@ -146,14 +65,10 @@
   backface-visibility: hidden;
   padding-top: 10px;
 }
-
-/* Style the front side (fallback if image is missing) */
 .flip-card-front {
   background-color: rgb(187, 187, 187);
   color: black
 }
-
-/* Style the back side */
 .flip-card-back {
   color: white;
   background-color: #222;
@@ -166,32 +81,77 @@
 .flip-card-back h1 {
   color:white;
 }
-h2, h3, h4, h5, h6 { color: #25292a; margin: 0px 0px 10px 0px; font-family: 'Overpass', sans-serif; font-weight: 700; letter-spacing: -1px; line-height: 1; }
-h1 { font-size: 34px; color: rgb(56, 60, 63);}
-h2 { font-size: 28px; line-height: 38px; }
-h3 { font-size: 22px; line-height: 32px; }
-h4 { font-size: 20px; }
-h5 { font-size: 17px; }
-h6 { font-size: 12px; }
-p { margin: 0 0 20px; line-height: 1.7; color: rgb(56, 60, 63); }
-p:last-child { margin: 0px; }
+h2, h3, h4, h5, h6 {
+  color: #25292a;
+  margin: 0px 0px 10px 0px;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+h1 {
+  font-size: 34px;
+  color: rgb(56, 60, 63);
+  text-align:center;
+}
+h2 {
+  font-size: 28px;
+  line-height: 38px;
+}
+h3 {
+  font-size: 22px;
+  line-height: 32px;
+}
+h4 {
+  font-size: 20px;
+}
+h5 { font-size: 17px;
+}
+h6 { font-size: 12px;
+}
+p { margin: 0 0 20px;
+  line-height: 1.7;
+  color: rgb(56, 60, 63);
+}
+p:last-child {
+  margin: 0px;
+}
 li:hover {
   border-radius: 5px;
   background-color: rgba(31, 27, 27, 0.267);
 }
-a { text-decoration: none; color: #8d8f90; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
-a:focus, a:hover { text-decoration: none; /*color: #f85759;*/ }
-
-
-
-.page-caption { padding-top: 170px; padding-bottom: 174px; }
-.page-title { font-size: 46px; line-height: 1; color: #000; font-weight: 600; text-align: center; }
-
-.card-section { position: relative; bottom: 20px; }
-.card-block { padding: 80px; }
-.section-title { margin-bottom: 60px; }
-
-
+a {
+  text-decoration: none;
+  color: #8d8f90;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+a:focus, a:hover {
+  text-decoration: none;
+  /*color: #f85759;*/
+}
+.page-caption {
+  padding-top: 170px;
+  padding-bottom: 174px;
+}
+.page-title {
+  font-size: 46px;
+  line-height: 1;
+  color: #000;
+  font-weight: 600;
+  text-align: center;
+}
+.card-section {
+  position: relative;
+  bottom: 20px;
+ }
+.card-block {
+  padding: 80px;
+}
+.section-title {
+  margin-bottom: 60px;
+}
 .carousel-item {
   height: 70vh;
   min-height: 350px;
@@ -201,16 +161,19 @@ a:focus, a:hover { text-decoration: none; /*color: #f85759;*/ }
   -o-background-size: cover;
   background-size: cover;
 }
-.jumbotron{
-  max-height: 50%;
-}
 #nikolica{
  height: 50px;
  width: 50px;
  border-radius: 50%;
 }
+.jumbotron{
+  max-height: 50%;
+}
 .jumbotron {
   color: #222;
+}
+#Onama{
+  text-align: center;
 }
 #drustvene img, #drustvene a{
   width: 100px;
@@ -231,12 +194,66 @@ a:focus, a:hover { text-decoration: none; /*color: #f85759;*/ }
 .kontaktforma{
   padding-left: 5px;
 }
-/*hr{
-  background-color: aliceblue;
-}*/
+input, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #222;
+}
+label, input, textarea{
+  display: block;
+  color: #222;
+}
+#Kontakt {
+  text-align: center;
+}
+.submit {
+  width: 100%;
+}
+footer {
+  width: 100%;
+  background-color:  #222;
+  padding: 5%;
+  border-color: #080808;
+}
+.logoF {
+  width:95px;
+  margin-top: 15px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.logoF:hover{
+  opacity:1;
+}
+.mailF{
+  width:95px;
+  margin-top:15px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.mailF:hover {
+  opacity:1;
+}
+.up {
+  width: 85px;
+  opacity: 0.6;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+.up:hover {
+  opacity: 0.8;
+}
+.up:active {
+  width: 95px;
+  margin-top: 15px;
+  margin-bottom: -5px;
+}
   </style>
+
   <body>
-    <!--POCETAK NAVIGACIONOG BARA-->
+<!--POCETAK NAVIGACIONOG BARA-->
 <div class=""></div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top sticky">
       <div class="container">
@@ -264,8 +281,9 @@ a:focus, a:hover { text-decoration: none; /*color: #f85759;*/ }
         </div>
       </div>
     </nav>
-
   <!-- KRAJ NAVIGACIONOG BARA-->
+
+  <!--pocinje karusel-->
   <header>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -274,21 +292,18 @@ a:focus, a:hover { text-decoration: none; /*color: #f85759;*/ }
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
-        <!-- Slide One - Set the background image for this slide in the line below -->
         <div class="carousel-item active" style="background-image: url('galaksija1.jpg')">
           <div class="carousel-caption d-none d-md-block">
             <h2 class="display-4">First Slide</h2>
             <p class="lead">This is a description for the first slide.</p>
           </div>
         </div>
-        <!-- Slide Two - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('galaksija2.jpg')">
           <div class="carousel-caption d-none d-md-block">
             <h2 class="display-4">Second Slide</h2>
             <p class="lead">This is a description for the second slide.</p>
           </div>
         </div>
-        <!-- Slide Three - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('galaksija3.jpg')">
           <div class="carousel-caption d-none d-md-block">
             <h2 class="display-4">Third Slide</h2>
@@ -306,37 +321,21 @@ a:focus, a:hover { text-decoration: none; /*color: #f85759;*/ }
           </a>
     </div>
   </header>
-<!-- /.page-header-->
-<!-- news -->
 <div class="card-section">
     <div class="container">
         <div class="card-block bg-white mb30">
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                    <!-- section-title -->
                     <div class="section-title mb-0">
                         <h2>All about Hike. We share our knowledge on blog</h2>
                         <p>Our approach is very simple: we define your problem and give the best solution. </p>
                     </div>
-                    <!-- /.section-title -->
                 </div>
             </div>
         </div>
-        <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center">
-          Created for <a href="https://easetemplate.com/downloads/digital-marketing-website-template-hike-bold-design/" target="_blank">easetemplate</a>
-          </div></div>
         </div>
         </div>
-
-
-
 <!--Kraj karusela!!!!!-->
-
-
-
-
-
 
 <!--POCETAK PONUDE-->
 <div class="container-fluid" id="Ponuda">
@@ -395,10 +394,8 @@ a:focus, a:hover { text-decoration: none; /*color: #f85759;*/ }
               </div>
             </div>
         </div>
-
   </div>
 </div>
-
 <!--KRAJ PONUDE!!!!-->
 
 <!--POCETAK O NAMA STRANICE!-->
@@ -445,16 +442,9 @@ a:focus, a:hover { text-decoration: none; /*color: #f85759;*/ }
   </div>
 </div>
 <br>
-
-
-
 <!--KRAJ O NAMA STRANICE!-->
 
-
-
 <!--kontakt forma-->
-
-
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-12 ">
@@ -482,12 +472,6 @@ a:focus, a:hover { text-decoration: none; /*color: #f85759;*/ }
           *Poruka
           <textarea class="message" name="poruka" rows="4" id="ms"></textarea>
         </label>
-        <div class="statusImp">
-          <!--ovde pise da li je validno ime i prezime-->
-        </div>
-        <div class="statusMs">
-          <!--ovde pise da li je validna poruka-->
-        </div>
         <button type="submit" class="submit btn btn-dark" value="Send">Posalji</button>
         <br>
         <br>
@@ -517,33 +501,21 @@ a:focus, a:hover { text-decoration: none; /*color: #f85759;*/ }
   </div>
 </div>
 <!--kraj kontakt forme-->
-<!--pocinje footer-->
 
+<!--pocinje footer-->
     <footer class="container-fluid text-center">
         <div class="row">
             <div class="col-sm-4">
                 <img src="FinalBadzoLogoM.png" width="100px;" class="logoF"> <!--nas logo-->
             </div>
-            <!--pocinje smooth scroll-->
             <div class="col-sm-4">
                 <a href="#"><img src="gore.png" class="up"></a>
             </div>
-            <!--gotov smooth scroll-->
             <div class="col-sm-4">
                 <a href="mailto:nasmejl@gmail.com"><img src="gmail.png" class="mailF" title="nasmejl@gmail.com"></a> <!--slika teksta 'kontaktiraj nas' i strelice koja pokazuje na gore, kada kliknes na nju odvede te do kontakt stranice-->
             </div>
         </div>
     </footer>
 <!--kraj footera-->
-
-
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <!--  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  --></body>
+</body>
 </html>
