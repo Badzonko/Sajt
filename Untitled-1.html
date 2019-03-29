@@ -17,6 +17,14 @@
 }
   body{
     z-index: 0;
+    -webkit-font-smoothing: antialiased;
+     text-rendering: optimizeLegibility;
+      font-family: 'Overpass', sans-serif; 
+      letter-spacing: 0px;
+     font-size: 17px; color: #8d8f90;
+      font-weight: 400;
+       line-height: 32px;
+        background-color: #edefef;
   }
   #logo_top{
     width: 50%;
@@ -115,60 +123,140 @@
   color: white;
   transform: rotateY(180deg);
 }
+h1, h2, h3, h4, h5, h6 { color: #25292a; margin: 0px 0px 10px 0px; font-family: 'Overpass', sans-serif; font-weight: 700; letter-spacing: -1px; line-height: 1; }
+h1 { font-size: 34px; }
+h2 { font-size: 28px; line-height: 38px; }
+h3 { font-size: 22px; line-height: 32px; }
+h4 { font-size: 20px; }
+h5 { font-size: 17px; }
+h6 { font-size: 12px; }
+p { margin: 0 0 20px; line-height: 1.7; }
+p:last-child { margin: 0px; }
+li:hover { 
+  border-radius: 5px;
+  background-color: rgba(31, 27, 27, 0.267);
+}
+a { text-decoration: none; color: #8d8f90; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
+a:focus, a:hover { text-decoration: none; color: #f85759; }
 
+
+
+.page-caption { padding-top: 170px; padding-bottom: 174px; }
+.page-title { font-size: 46px; line-height: 1; color: #fff; font-weight: 600; text-align: center; }
+
+.card-section { position: relative; bottom: 20px; }
+.card-block { padding: 80px; }
+.section-title { margin-bottom: 60px; }
+
+
+.carousel-item {
+  height: 70vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
   </style>
   <body>
     <!--POCETAK NAVIGACIONOG BARA-->
-
-    <div id="app" class="container-fluid">
-    <div class="row">
-      <div class="col-sm-12">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class=""></div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container">
         <a class="navbar-brand" href="#">
-          <!--<img src="http://placehold.it/150x50?text=Logo" alt="">-->
-          <img src="logo.png" id="logo_top">
-        </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <img src="http://placehold.it/150x50?text=Logo" alt="">
+            </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
-          </button>
-          <div id="navbarNavDropdown" class="navbar-collapse collapse">
-              <ul class="navbar-nav mr-auto">
-
-
-              </ul>
-              <ul class="navbar-nav">
-                  <li class="nav-item opacity">
-                    <a class="nav-link" href="#Pocetna">Pocetna</a>
-                  </li>
-                  <li class="nav-item opacity">
-                    <a class="nav-link" href="#Ponuda">Ponuda</a>
-                  </li>
-                  <li class="nav-item opacity">
-                      <a class="nav-link" href="#">O nama</a>
-                  </li>
-                  <li class="nav-item opacity">
-                      <a class="nav-link" href="#Kontakt">Kontakt</a>
-                  </li>
-              </ul>
-          </div>
-      </nav>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#Pocetna">Pocetna
+                    
+                  </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Ponuda">Ponuda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">O nama</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Kontakt">Kontakt</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    </div>
+    </nav>
 
   <!-- KRAJ NAVIGACIONOG BARA-->
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-12 ">
-      <h1 class="pocetna" id="Pocetna">Pocetna</h1>
-      <hr/>
-
-
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active" style="background-image: url('galaksija1.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="display-4">First Slide</h2>
+            <p class="lead">This is a description for the first slide.</p>
+          </div>
         </div>
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('galaksija2.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="display-4">Second Slide</h2>
+            <p class="lead">This is a description for the second slide.</p>
+          </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('galaksija3.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="display-4">Third Slide</h2>
+            <p class="lead">This is a description for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
     </div>
-  </div>
+  </header>
+<!-- /.page-header-->
+<!-- news -->
+<div class="card-section">
+    <div class="container">
+        <div class="card-block bg-white mb30">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <!-- section-title -->
+                    <div class="section-title mb-0">
+                        <h2>All about Hike. We share our knowledge on blog</h2>
+                        <p>Our approach is very simple: we define your problem and give the best solution. </p>
+                    </div>
+                    <!-- /.section-title -->
+                </div>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center">
+          Created for <a href="https://easetemplate.com/downloads/digital-marketing-website-template-hike-bold-design/" target="_blank">easetemplate</a>
+          </div></div>
+        </div>
+        </div>
+        
 
-</div>
+
 <!--Kraj karusela!!!!!-->
 
 
