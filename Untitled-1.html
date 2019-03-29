@@ -24,7 +24,7 @@
      font-size: 17px; color: #8d8f90;
       font-weight: 400;
        line-height: 32px;
-        background-color: #edefef;
+        background-image: url("black3.jpg");
   }
   #logo_top{
     width: 50%;
@@ -38,6 +38,9 @@
     display: block;
   }
   #Kontakt {
+    text-align: center;
+  }
+  #Onama{
     text-align: center;
   }
   input, textarea {
@@ -123,14 +126,14 @@
   color: white;
   transform: rotateY(180deg);
 }
-h1, h2, h3, h4, h5, h6 { color: #25292a; margin: 0px 0px 10px 0px; font-family: 'Overpass', sans-serif; font-weight: 700; letter-spacing: -1px; line-height: 1; }
-h1 { font-size: 34px; }
+ h2, h3, h4, h5, h6 { color: #25292a; margin: 0px 0px 10px 0px; font-family: 'Overpass', sans-serif; font-weight: 700; letter-spacing: -1px; line-height: 1; }
+h1 { font-size: 34px; color: rgb(140, 168, 192);}
 h2 { font-size: 28px; line-height: 38px; }
 h3 { font-size: 22px; line-height: 32px; }
 h4 { font-size: 20px; }
 h5 { font-size: 17px; }
 h6 { font-size: 12px; }
-p { margin: 0 0 20px; line-height: 1.7; }
+p { margin: 0 0 20px; line-height: 1.7; color: rgb(140, 168, 192); }
 p:last-child { margin: 0px; }
 li:hover { 
   border-radius: 5px;
@@ -158,6 +161,17 @@ a:focus, a:hover { text-decoration: none; color: #f85759; }
   -o-background-size: cover;
   background-size: cover;
 }
+.jumbotron{
+  max-height: 50%;
+}
+#nikolica{
+ height: 50px;
+ width: 50px;
+ border-radius: 50%;
+}
+hr{
+  background-color: aliceblue;
+}
   </style>
   <body>
     <!--POCETAK NAVIGACIONOG BARA-->
@@ -181,7 +195,7 @@ a:focus, a:hover { text-decoration: none; color: #f85759; }
               <a class="nav-link" href="#Ponuda">Ponuda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">O nama</a>
+              <a class="nav-link" href="#Onama">O nama</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#Kontakt">Kontakt</a>
@@ -327,7 +341,54 @@ a:focus, a:hover { text-decoration: none; color: #f85759; }
 
 <!--KRAJ PONUDE!!!!-->
 
+<!--POCETAK O NAMA STRANICE!-->
+<div class="container-fluid">
+    <h1 id="Onama">O nama</h1>
+    <hr/>
+  <div class="row">
+    <div class="col-sm-4"> 
+      <div class="card" style="width: 420px;">
+        <img class="card-img-top" src="jeremija.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h1 class="card-title">Jeremic Nikola</h1>
+          <p class="card-text" style="text-align:justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#demo" class="btn btn-info btn-block" data-toggle="collapse">Saznaj vise</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+<div class="jumbotron" ><h3><img src="jeremija.jpg" alt="Nikola" id="nikolica"> Jeremic Nikola</h3>
+  <div id="demo" class="collapse">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+</div>
+<div class="jumbotron" ><h3>Vucenovic Branislav</h3>
+  <div id="dimo" class="collapse">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+  </div>
+      </div>
+    <div class="col-sm-4"> 
+        <div class="card" style="width: 420px;">
+          <img class="card-img-top" src="http://placehold.it/200x200?text=Logo" alt="Card image cap">
+          <div class="card-body">
+            <h1 class="card-title">Vucenovic Branislav </h1>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#dimo" class="btn btn-info btn-block" data-toggle="collapse">Saznaj vise</a>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<br>
 
+
+
+<!--KRAJ O NAMA STRANICE!-->
 
 
 
