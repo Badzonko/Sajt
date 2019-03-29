@@ -10,22 +10,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="./jscontact.js"></script>
+    <script src=""></script>
   </head>
   <style>
   html {
   scroll-behavior: smooth;
 }
   body{
-    z-index: 0;
-    -webkit-font-smoothing: antialiased;
+     z-index: 0;
+     -webkit-font-smoothing: antialiased;
      text-rendering: optimizeLegibility;
-      font-family: 'Overpass', sans-serif; 
-      letter-spacing: 0px;
+     font-family: 'Overpass', sans-serif;
+     letter-spacing: 0px;
      font-size: 17px; color: #8d8f90;
-      font-weight: 400;
-       line-height: 32px;
-        background-image: url("black3.jpg");
+     font-weight: 400;
+     line-height: 32px;
+    /*background-image: url("light4.jpg");*/
+    background-color:  #efefef;
   }
+  /*.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}*/
   #logo_top{
     width: 50%;
   }
@@ -36,6 +44,7 @@
   }
   label, input, textarea{
     display: block;
+    color: #222;
   }
   #Kontakt {
     text-align: center;
@@ -49,7 +58,7 @@
     margin: 8px 0;
     box-sizing: border-box;
     border-radius: 4px;
-    border: 2px solid #D3D3D3;
+    border: 1px solid #222;
   }
   .submit {
     width: 100%;
@@ -60,6 +69,29 @@
     padding: 5%;
     border-color: #080808;
   }
+  .logoH {
+    width: 50px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+  }
+  .logoF {
+    width:95px;
+    margin-top: 15px;
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+  .logoF:hover{
+    opacity:1;
+  }
+  .mailF{
+    width:95px;
+    margin-top:15px;
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+  .mailF:hover {
+    opacity:1;
+  }
   .up {
     width: 85px;
     opacity: 0.6;
@@ -68,7 +100,7 @@
   }
 
   .up:hover {
-    opacity: 1;
+    opacity: 0.8;
   }
 
   .up:active {
@@ -112,40 +144,48 @@
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  padding-top: 10px;
 }
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
   background-color: rgb(187, 187, 187);
-  color: black;
+  color: black
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
   color: white;
+  background-color: #222;
   transform: rotateY(180deg);
+  padding: 10px;
 }
- h2, h3, h4, h5, h6 { color: #25292a; margin: 0px 0px 10px 0px; font-family: 'Overpass', sans-serif; font-weight: 700; letter-spacing: -1px; line-height: 1; }
-h1 { font-size: 34px; color: rgb(140, 168, 192);}
+.flip-card-back p {
+  color: white;
+}
+.flip-card-back h1 {
+  color:white;
+}
+h2, h3, h4, h5, h6 { color: #25292a; margin: 0px 0px 10px 0px; font-family: 'Overpass', sans-serif; font-weight: 700; letter-spacing: -1px; line-height: 1; }
+h1 { font-size: 34px; color: rgb(56, 60, 63);}
 h2 { font-size: 28px; line-height: 38px; }
 h3 { font-size: 22px; line-height: 32px; }
 h4 { font-size: 20px; }
 h5 { font-size: 17px; }
 h6 { font-size: 12px; }
-p { margin: 0 0 20px; line-height: 1.7; color: rgb(140, 168, 192); }
+p { margin: 0 0 20px; line-height: 1.7; color: rgb(56, 60, 63); }
 p:last-child { margin: 0px; }
-li:hover { 
+li:hover {
   border-radius: 5px;
   background-color: rgba(31, 27, 27, 0.267);
 }
 a { text-decoration: none; color: #8d8f90; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
-a:focus, a:hover { text-decoration: none; color: #f85759; }
+a:focus, a:hover { text-decoration: none; /*color: #f85759;*/ }
 
 
 
 .page-caption { padding-top: 170px; padding-bottom: 174px; }
-.page-title { font-size: 46px; line-height: 1; color: #fff; font-weight: 600; text-align: center; }
+.page-title { font-size: 46px; line-height: 1; color: #000; font-weight: 600; text-align: center; }
 
 .card-section { position: relative; bottom: 20px; }
 .card-block { padding: 80px; }
@@ -169,17 +209,39 @@ a:focus, a:hover { text-decoration: none; color: #f85759; }
  width: 50px;
  border-radius: 50%;
 }
-hr{
-  background-color: aliceblue;
+.jumbotron {
+  color: #222;
 }
+#drustvene img, #drustvene a{
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+#drustvene img, #drustvene a:hover{
+  opacity:1;
+  color:inherit;
+}
+#drustvene h1{
+  font-size: 30px;
+  padding-bottom: 25px;
+}
+.kontaktforma{
+  padding-left: 5px;
+}
+/*hr{
+  background-color: aliceblue;
+}*/
   </style>
   <body>
     <!--POCETAK NAVIGACIONOG BARA-->
 <div class=""></div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top sticky">
       <div class="container">
         <a class="navbar-brand" href="#">
-              <img src="http://placehold.it/150x50?text=Logo" alt="">
+              <img src="FinalBadzoLogoM.png" alt="" class="logoH">
             </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -187,9 +249,7 @@ hr{
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#Pocetna">Pocetna
-                    
-                  </a>
+              <a class="nav-link" href="#">Pocetna</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#Ponuda">Ponuda</a>
@@ -268,7 +328,7 @@ hr{
           </div></div>
         </div>
         </div>
-        
+
 
 
 <!--Kraj karusela!!!!!-->
@@ -295,7 +355,7 @@ hr{
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Quisque sapien velit, aliquet eget commodo nec, auctor a sapien.
                    Nam eu neque vulputate diam rhoncus faucibus. Curabitur quis varius libero. Lorem.</p>
-                   <a href="#Kontakt"><input type="button" class="btn btn-warning" value="Porucite" id="added"/></a>
+                   <a href="#Kontakt"><input type="button" class="btn btn-warning btn-light" value="Porucite" id="added"/></a>
               </div>
             </div>
           </div>
@@ -312,7 +372,7 @@ hr{
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Quisque sapien velit, aliquet eget commodo nec, auctor a sapien.
                      Nam eu neque vulputate diam rhoncus faucibus. Curabitur quis varius libero. Lorem.</p>
-                     <a href="#Kontakt"><input type="button" class="btn btn-warning" value="Porucite" id="adding"/></a>
+                     <a href="#Kontakt"><input type="button" class="btn btn-warning btn-light" value="Porucite" id="adding"/></a>
               </div>
             </div>
           </div>
@@ -330,7 +390,7 @@ hr{
                       Quisque sapien velit, aliquet eget commodo nec, auctor a sapien.
                        Nam eu neque vulputate diam rhoncus faucibus. Curabitur quis varius libero. Lorem.</p>
                   <a href="#Kontakt">
-                    <input type="button" class="btn btn-warning" value="Porucite" id="add"/></a>
+                    <input type="button" class="btn btn-warning btn-light" value="Porucite" id="add"/></a>
                 </div>
               </div>
             </div>
@@ -346,17 +406,17 @@ hr{
     <h1 id="Onama">O nama</h1>
     <hr/>
   <div class="row">
-    <div class="col-sm-4"> 
+    <div class="col-sm-4">
       <div class="card" style="width: 420px;">
         <img class="card-img-top" src="jeremija.jpg" alt="Card image cap">
         <div class="card-body">
           <h1 class="card-title">Jeremic Nikola</h1>
           <p class="card-text" style="text-align:justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#demo" class="btn btn-info btn-block" data-toggle="collapse">Saznaj vise</a>
+          <a href="#demo" class="btn btn-info btn-block btn-dark" data-toggle="collapse" data-target="#demo">Saznaj vise</a>
         </div>
       </div>
     </div>
-    <div class="col-sm-4"> 
+    <div class="col-sm-4">
 <div class="jumbotron" ><h3><img src="jeremija.jpg" alt="Nikola" id="nikolica"> Jeremic Nikola</h3>
   <div id="demo" class="collapse">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -364,7 +424,7 @@ hr{
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   </div>
 </div>
-<div class="jumbotron" ><h3>Vucenovic Branislav</h3>
+<div class="jumbotron" ><h3><img src="banemija.jpg" alt="Nikola" id="nikolica"> Vucenovic Branislav</h3>
   <div id="dimo" class="collapse">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -372,13 +432,13 @@ hr{
     </div>
   </div>
       </div>
-    <div class="col-sm-4"> 
+    <div class="col-sm-4">
         <div class="card" style="width: 420px;">
-          <img class="card-img-top" src="http://placehold.it/200x200?text=Logo" alt="Card image cap">
+          <img class="card-img-top" src="banemija.jpg" alt="Card image cap">
           <div class="card-body">
             <h1 class="card-title">Vucenovic Branislav </h1>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#dimo" class="btn btn-info btn-block" data-toggle="collapse">Saznaj vise</a>
+            <a href="#dimo" class="btn btn-info btn-block btn-dark" data-toggle="collapse">Saznaj vise</a>
           </div>
         </div>
       </div>
@@ -401,6 +461,10 @@ hr{
       <h1 id="Kontakt" >Kontaktirajte nas</h1>
       <hr/>
       <br/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 ">
       <form action="https://formspree.io/nasmejl@email.com" method="POST" class="kontaktforma"> <!--ovde stavimo nas mejl posle-->
         <label>
           *Ime i prezime
@@ -431,6 +495,25 @@ hr{
         <h6 style="font-size:0.8em">Odgovaramo u roku od 2h!</h6>
       </form>
     </div>
+    <div class="col-sm-6" id="drustvene">
+      <h1>Drustvene mreze</h1>
+      <div class="container-fluid">
+          <a href=""><img src="instagram.png"></a>
+          <a href="#">nas_instagram</a>
+      </div>
+      <div class="container-fluid">
+        <a href=""><img src="facebook.png"></a>
+        <a href="#">nas_facebook</a>
+      </div>
+      <div class="container-fluid">
+        <a href=""><img src="linkedin.png"><a/>
+        <a href="#">moj_linkedin</a>
+      </div>
+      <div class="container-fluid">
+        <a href=""><img src="linkedin.png"></a>
+        <a href="#">tvoj_linkedin</a>
+      </div>
+    </div>
   </div>
 </div>
 <!--kraj kontakt forme-->
@@ -439,7 +522,7 @@ hr{
     <footer class="container-fluid text-center">
         <div class="row">
             <div class="col-sm-4">
-                <img src="logo.png" title="nas logo"> <!--nas logo-->
+                <img src="FinalBadzoLogoM.png" width="100px;" class="logoF"> <!--nas logo-->
             </div>
             <!--pocinje smooth scroll-->
             <div class="col-sm-4">
@@ -447,7 +530,7 @@ hr{
             </div>
             <!--gotov smooth scroll-->
             <div class="col-sm-4">
-                <img src="kontaktiraj_nas.png" title="kontaktirajte nas"> <!--slika teksta 'kontaktiraj nas' i strelice koja pokazuje na gore, kada kliknes na nju odvede te do kontakt stranice-->
+                <a href="mailto:nasmejl@gmail.com"><img src="gmail.png" class="mailF" title="nasmejl@gmail.com"></a> <!--slika teksta 'kontaktiraj nas' i strelice koja pokazuje na gore, kada kliknes na nju odvede te do kontakt stranice-->
             </div>
         </div>
     </footer>
@@ -457,11 +540,10 @@ hr{
 
 
 
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!--  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+  --></body>
 </html>

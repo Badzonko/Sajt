@@ -13,21 +13,21 @@ $(document).ready(function () {
     //statusElmMs.empty
 
     if(fname.length>6 && fname.includes(' ')){ //ako ime i prezime imaju ukupno bar 6 karaktera i razmak izmedju ok je, polje dobija zeleni border
-      document.getElementById("imp").style.border= "2px solid green"
+      document.getElementById("imp").style.border= "1px solid green"
     } else { //ako ime i prezime nemaju bar 6 karaktera nije ok, crveni border i poruka
       event.preventDefault()
       alert('Unesite puno ime i prezime!')
-      document.getElementById("imp").style.border= "2px solid red"
+      document.getElementById("imp").style.border= "1px solid red"
     }
 
 
     if(message.length> 20) { //ako sadrzaj poruke ima bar 20 karaktera ok je, polje dobija zeleni border
-      document.getElementById("ms").style.border= "2px solid green"
+      document.getElementById("ms").style.border= "1px solid green"
     } else { //ako nema bar 20 karaktera onda nije ok, crveni border i poruka
       event.preventDefault()
       statusElmMs.empty
       alert('Poruka mora biti dugačka barem 20 karaktera!')
-      document.getElementById("ms").style.border= "2px solid red"
+      document.getElementById("ms").style.border= "1px solid red"
     }
 
   })
@@ -60,4 +60,3 @@ function chg(){ //vraca boju teksta u 'paket' polju na crnu i brise default teks
     document.getElementById("pk").innerHTML="";
   }
 }
-
