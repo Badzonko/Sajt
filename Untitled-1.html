@@ -31,6 +31,10 @@ body{
   width: 50px;
   margin-top: -5px;
   margin-bottom: -5px;
+  transition: 0.8s;
+}
+.logoH:hover{
+  transform: rotate(360deg);
 }
 #logo_top{
   width: 50%;
@@ -189,9 +193,14 @@ a:focus, a:hover {
  height: 50px;
  width: 50px;
  border-radius: 50%;
+ transition:0.8s;
+}
+#nikolica:hover{
+  transform: rotate(360deg);
 }
 .jumbotron{
   max-height: 50%;
+  box-shadow: 2px 2px 20px grey;
 }
 .jumbotron {
   color: #222;
@@ -204,12 +213,13 @@ a:focus, a:hover {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  opacity: 0.8;
-  transition: 0.3s;
-}
-#drustvene img, #drustvene a:hover{
-  opacity:1;
   color:inherit;
+}
+#drustvene img{
+  transition:0.8s;
+}
+#drustvene img:hover{
+  transform: rotate(360deg);
 }
 #drustvene h1{
   font-size: 30px;
@@ -245,20 +255,18 @@ footer {
 .logoF {
   width:95px;
   margin-top: 15px;
-  opacity: 0.8;
-  transition: 0.3s;
+  transition: 0.8s;
 }
 .logoF:hover{
-  opacity:1;
+  transform: rotate(360deg);
 }
 .mailF{
   width:95px;
   margin-top:15px;
-  opacity: 0.8;
-  transition: 0.3s;
+  transition: 0.8s;
 }
 .mailF:hover {
-  opacity:1;
+  transform: rotate(360deg);
 }
 .up {
   width: 85px;
@@ -271,6 +279,14 @@ footer {
   opacity: 0.6;
   margin-top: 20px;
   transition: 0.3s;
+}
+.down:hover{
+  opacity: 0.8
+}
+.down:active{
+  width: 95px;
+  margin-top: 15px;
+  margin-bottom: -5px;
 }
 .up:hover {
   opacity: 0.8;
@@ -376,13 +392,13 @@ footer {
         <div class="container-fluid text-center">
             <div class="row">
               <div class="col-sm-4">
-          
+
               </div>
               <div class="col-sm-4">
                   <a href="#Ponuda"><img src="dole.png" class="down"></a>
               </div>
               <div class="col-sm-4">
-          
+
                 </div>
             </div>
           </div>
@@ -449,17 +465,17 @@ footer {
         <div class="container-fluid text-center">
             <div class="row">
               <div class="col-sm-4">
-          
+
               </div>
               <div class="col-sm-4">
                   <a href="#Onama"><img src="dole.png" class="down"></a>
               </div>
               <div class="col-sm-4">
-          
+
                 </div>
             </div>
           </div>
-          
+
   </div>
 </div>
 <br>
