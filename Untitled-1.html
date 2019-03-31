@@ -108,6 +108,7 @@ body{
 }
 .flip-card-back h1 {
   color:white;
+  padding-bottom: 40px;
 }
 h2, h3, h4, h5, h6 {
   color: #25292a;
@@ -192,9 +193,9 @@ a:focus, a:hover {
 @media only screen and (max-width: 1000px){
   .flip-card{
     width: 184px !important;
-  height: 290px;
-  font-size: 10px;
- margin-left:15%;
+    height: 290px;
+    font-size: 10px;
+    margin-left:15%;
   }
   .batn{
     padding-bottom: -50% !important;
@@ -205,8 +206,11 @@ a:focus, a:hover {
     margin-left:-20%;
     text-align: left;
   }
-  ul li:hover{
-display: none;
+  /*ul li:hover{
+    display: none;
+  }*/
+  .flip-card-back h1{
+    padding-bottom: 0px;
   }
   .flip-card-back p{
     visibility: hidden;
@@ -214,8 +218,8 @@ display: none;
   #paketic{
     height: 200px !important;
     width: 180px !important;
+  }
 }
-    }
 #nikolica{
  height: 50px;
  width: 50px;
@@ -373,19 +377,19 @@ footer {
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active" style="background-image: url('galaksija1.jpg')">
+        <div class="carousel-item active" style="background-image: url('galaksija4.jpg')">
           <div class="carousel-caption d-none d-md-block">
             <h2 class="display-4">First Slide</h2>
             <p class="lead">This is a description for the first slide.</p>
           </div>
         </div>
-        <div class="carousel-item" style="background-image: url('galaksija2.jpg')">
+        <div class="carousel-item" style="background-image: url('galaksija5.jpg')">
           <div class="carousel-caption d-none d-md-block">
             <h2 class="display-4">Second Slide</h2>
             <p class="lead">This is a description for the second slide.</p>
           </div>
         </div>
-        <div class="carousel-item" style="background-image: url('galaksija3.jpg')">
+        <div class="carousel-item" style="background-image: url('galaksija6.jpg')">
           <div class="carousel-caption d-none d-md-block">
             <h2 class="display-4">Third Slide</h2>
             <p class="lead">This is a description for the third slide.</p>
@@ -451,7 +455,7 @@ footer {
                   <li>Lorem ipsum dolor sit amet.</li>
                   <li>Lorem ipsum dolor sit amet.</li>
                   <li>Lorem ipsum dolor sit amet.</li>
-                 
+
                 </ul>
                 <div style="margin-top:-60%">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
