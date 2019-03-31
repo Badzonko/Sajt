@@ -60,3 +60,4 @@ function chg(){ //vraca boju teksta u 'paket' polju na crnu i brise default teks
     document.getElementById("pk").innerHTML="";
   }
 }
+
