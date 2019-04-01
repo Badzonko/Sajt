@@ -220,6 +220,54 @@ a:focus, a:hover {
     width: 180px !important;
   }
 }
+@media only screen and (max-width: 1000px){
+  #dambo {
+    visibility: hidden;
+  }
+  .card{
+    width: 184px !important;
+    height: 290px;
+    font-size: 10px;
+    margin-left:15%;
+    margin-top:15%;
+    margin-bottom:15%;
+  }
+  #naslov {
+    font-size: 12px;
+    
+  }
+  #nekiTekst{
+    visibility: hidden;
+  }
+  #nugme{
+    visibility: hidden;
+  }
+  #augme{
+    margin-top: -80% !important;
+    visibility: visible !important;
+  }
+  #bugme {
+    visibility: hidden;
+  }
+  #sugme{
+    margin-top: -80% !important;
+    visibility: visible !important;
+  }
+
+}
+@media only screen and (max-width:600px){
+  #nzm{
+    font-size: 14px;
+    line-height: 150% !important;
+    margin-left: -20%;
+  }
+  #nzm1{
+    font-size:12px;
+    line-height: 150% !important;
+    margin-left: -20%;
+  }
+}
+
 #nikolica{
  height: 50px;
  width: 50px;
@@ -300,13 +348,13 @@ footer {
   transform: rotate(360deg);
 }
 .up {
-  width: 85px;
+  width: 50px;
   opacity: 0.6;
   margin-top: 20px;
   transition: 0.3s;
 }
 .down {
-  width: 85px;
+  width: 50px;
   opacity: 0.6;
   margin-top: 20px;
   transition: 0.3s;
@@ -412,8 +460,9 @@ footer {
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div class="section-title mb-0">
-                        <h2>All about Hike. We share our knowledge on blog</h2>
-                        <p>Our approach is very simple: we define your problem and give the best solution. </p>
+                      <h2 id="nzm">Treba Vam Website,logo ili prerada slike?</h2>
+                      <hr/>
+                      <h3 id="nzm1">Na mestu ste gde mozete dobiti sve od jednom, i to upravo sada! </h3>
                     </div>
                 </div>
             </div>
@@ -545,21 +594,23 @@ footer {
       <div class="card" style="width: 420px;">
         <img class="card-img-top" src="jeremija.jpg" alt="Card image cap">
         <div class="card-body">
-          <h1 class="card-title">Jeremic Nikola</h1>
-          <p class="card-text" style="text-align:justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#demo" class="btn btn-info btn-block btn-dark" data-toggle="collapse" data-target="#demo">Saznaj vise</a>
+          <h1 class="card-title" id="naslov">Jeremic Nikola</h1>
+          <p class="card-text" style="text-align:justify" id="nekiTekst">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#demo" id="nugme" class="btn btn-info btn-block btn-dark" data-toggle="collapse" data-target="#demo">Saznaj vise</a>
+          <a href="#dzoni" id="augme" style="visibility:hidden" class="btn btn-info btn-block btn-dark">Saznaj vise</a>
+
         </div>
       </div>
     </div>
     <div class="col-sm-4">
-<div class="jumbotron" ><h3><img src="jeremija.jpg" alt="Nikola" id="nikolica"> Jeremic Nikola</h3>
+<div id="dambo" class="jumbotron" ><h3><img src="jeremija.jpg" alt="Nikola" id="nikolica"> Jeremic Nikola</h3>
   <div id="demo" class="collapse">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   </div>
 </div>
-<div class="jumbotron" ><h3><img src="banemija.jpg" alt="Nikola" id="nikolica"> Vucenovic Branislav</h3>
+<div id="dambo" class="jumbotron" ><h3><img src="banemija.jpg" alt="Nikola" id="nikolica"> Vucenovic Branislav</h3>
   <div id="dimo" class="collapse">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -567,16 +618,17 @@ footer {
     </div>
   </div>
   <div class="text-center">
-      <a href="#Kontakt"><img src="dole.png" class="down"></a>
+      <a href="#Kontakt"><img src="dole.png" id="dolee" class="down"></a>
   </div>
       </div>
     <div class="col-sm-4">
-        <div class="card" style="width: 420px;">
+        <div class="card" id="brane" style="width: 420px;">
           <img class="card-img-top" src="banemija.jpg" alt="Card image cap">
           <div class="card-body">
-            <h1 class="card-title">Vucenovic Branislav </h1>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#dimo" class="btn btn-info btn-block btn-dark" data-toggle="collapse">Saznaj vise</a>
+            <h1 class="card-title" id="naslov">Vucenovic Branislav </h1>
+            <p class="card-text" style="text-align:justify" id="nekiTekst">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#dimo" id="bugme" class="btn btn-info btn-block btn-dark" data-toggle="collapse">Saznaj vise</a>
+            <a href="#bane" id="sugme" style="visibility:hidden" class="btn btn-info btn-block btn-dark">Saznaj vise</a>
           </div>
         </div>
       </div>
@@ -623,20 +675,20 @@ footer {
     <div class="col-sm-6" id="drustvene">
       <h1>Drustvene mreze</h1>
       <div class="container-fluid">
-          <a href=""><img src="instagram.png"></a>
-          <a href="#">nas_instagram</a>
+          <a href="https://www.instagram.com/badzo_web_development/" target="_blank"><img src="instagram.png"></a>
+          <a href="https://www.instagram.com/badzo_web_development/" style="text-align:center">Badzo Web development</a>
       </div>
       <div class="container-fluid">
-        <a href=""><img src="facebook.png"></a>
-        <a href="#">nas_facebook</a>
+        <a href="" target="_blank"><img src="facebook.png"></a>
+        <a href="#" style="text-align:center">nas_facebook</a>
       </div>
       <div class="container-fluid">
-        <a href=""><img src="linkedin.png"></a>
-        <a href="#">moj_linkedin</a>
+        <a href="https://www.linkedin.com/in/branislav-vu%C4%8Denovi%C4%87-446612173/" target="_blank"><img src="linkedin.png"></a>
+        <a href="https://www.linkedin.com/in/branislav-vu%C4%8Denovi%C4%87-446612173/" id="bane" style="text-align:center">Vucenovic Branislav</a>
       </div>
       <div class="container-fluid">
-        <a href=""><img src="linkedin.png"></a>
-        <a href="#">tvoj_linkedin</a>
+        <a href="https://www.linkedin.com/in/nikola-jeremic-5b4005183/" target="_blank"><img src="linkedin.png"></a>
+        <a href="https://www.linkedin.com/in/nikola-jeremic-5b4005183/" id="dzoni" style="text-align:center">Jeremic Nikola</a>
       </div>
     </div>
   </div>
