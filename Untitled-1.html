@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="./jscontact.js"></script>
+    <script src="./galerija.js"></script>
     <script src=""></script>
   </head>
   <style>
@@ -62,6 +63,9 @@ body{
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
+}
+#nzm, #nzm1{
+  text-align: center;
 }
 .ponudica{
   text-align: center;
@@ -224,7 +228,7 @@ a:focus, a:hover {
 @media only screen and (max-width: 1100px){
   #dambo {
     visibility: hidden;
-   
+
   }
   .card{
     width: 184px !important;
@@ -236,7 +240,7 @@ a:focus, a:hover {
   }
   #naslov {
     font-size: 12px;
-    
+
   }
   #nekiTekst{
     visibility: hidden;
@@ -259,12 +263,12 @@ a:focus, a:hover {
 }
 @media only screen and (max-width:1000px){
   #nzm{
-    font-size: 14px;
+    font-size: 15px;
     line-height: 150% !important;
     margin-left: -20%;
   }
   #nzm1{
-    font-size:12px;
+    font-size:13px;
     line-height: 150% !important;
     margin-left: -20%;
   }
@@ -297,12 +301,68 @@ a:focus, a:hover {
 #Onama{
   text-align: center;
 }
+.gal img{
+  cursor: pointer;
+  transition:0.8s;
+  width: 100px;
+  border-radius:10px;
+  box-shadow: 2px 2px 20px grey;
+  margin:5px;
+}
+.gal img:hover{
+  transform: rotate(360deg);
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.slika{
+  position:relative;
+  display:none;
+}
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 40px;
+  color: white;
+  font-size: 20px;
+}
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  color: gray;
+  font-size: 35px;
+  cursor: pointer;
+  transition:0.8s;
+}
+.closebtn:hover{
+  font-size:50px;
+  transform: rotate(360deg);
+}
+#expandedImg{
+  border-radius:10px;
+  box-shadow: 2px 2px 20px grey;
+  animation: shake 2s;
+  animation-iteration-count: 1;
+}
 #drustvene img, #drustvene a{
   width: 100px;
   margin-left: auto;
   margin-right: auto;
   display: block;
   color:inherit;
+  text-align: center;
 }
 #drustvene img{
   transition:0.8s;
@@ -313,6 +373,9 @@ a:focus, a:hover {
 #drustvene h1{
   font-size: 30px;
   padding-bottom: 25px;
+}
+#insta{
+  text-align: center;
 }
 .kontaktforma{
   padding-left: 5px;
@@ -358,7 +421,7 @@ footer {
   transform: rotate(360deg);
 }
 .up {
-  width: 50px;
+  width: 85px;
   opacity: 0.6;
   margin-top: 20px;
   transition: 0.3s;
@@ -373,8 +436,8 @@ footer {
   opacity: 0.8
 }
 .down:active{
-  width: 95px;
-  margin-top: 15px;
+  width: 70px;
+  margin-top: 5px;
   margin-bottom: -5px;
 }
 .up:hover {
@@ -416,6 +479,9 @@ footer {
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#Onama">O nama</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Radovi">Radovi</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#Kontakt">Kontakt</a>
@@ -499,7 +565,16 @@ footer {
 <div class="container-fluid" id="Ponuda">
     <h1 class="ponudica">Ponuda</h1>
     <hr/>
+    <br/>
   <div class="row">
+    <div class="container-fluid text-center">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>Web dizajn</h1>
+          <hr style="width:45%"/>
+        </div>
+      </div>
+    </div>
     <div class="col-sm-4" id="kartice">
         <div class="flip-card">
             <div class="flip-card-inner">
@@ -577,6 +652,34 @@ footer {
             </div>
         </div>
         <div class="container-fluid text-center">
+          <div class="row">
+            <div class="col-sm-12">
+              <h1>Logo i graficki dizajn</h1>
+              <hr style="width:45%"/>
+              <p>tekst neki dok ne smislim sta ce ovde stojati</p>
+              <p>tekst neki dok ne smislim sta ce ovde stojati</p>
+              <p>tekst neki dok ne smislim sta ce ovde stojati</p>
+              <p>tekst neki dok ne smislim sta ce ovde stojati</p>
+              <p>tekst neki dok ne smislim sta ce ovde stojati</p>
+              <br/>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid text-center">
+          <div class="row">
+            <div class="col-sm-12">
+              <h1>Obrada slika</h1>
+              <hr style="width:45%"/>
+              <p>tekst neki dok ne smislim sta ce ovde stojati</p>
+              <p>tekst neki dok ne smislim sta ce ovde stojati</p>
+              <p>tekst neki dok ne smislim sta ce ovde stojati</p>
+              <p>tekst neki dok ne smislim sta ce ovde stojati</p>
+              <p>tekst neki dok ne smislim sta ce ovde stojati</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid text-center">
             <div class="row">
               <div class="col-sm-4">
 
@@ -628,7 +731,7 @@ footer {
     </div>
   </div>
   <div class="text-center">
-      <a href="#Kontakt"><img src="dole.png" id="dolee" class="down"></a>
+      <a href="#Radovi"><img src="dole.png" id="dolee" class="down"></a>
   </div>
       </div>
     <div class="col-sm-4">
@@ -644,11 +747,55 @@ footer {
       </div>
   </div>
   <div class="text-center">
-    <a href="#Kontakt"><img src="dole.png" id="doleee" style="visibility:hidden" class="down"></a>
+    <a href="#Radovi"><img src="dole.png" id="doleee" style="visibility:hidden" class="down"></a>
 </div>
 </div>
 <br>
 <!--KRAJ O NAMA STRANICE!-->
+
+<!--Nasi ravodi-->
+<div class="container-fluid">
+  <div class="row" style="text-align:center;">
+      <div class="col-sm-12">
+          <h1 id="Radovi">Nasi Radovi</h1>
+          <hr/>
+      </div>
+          <div class="col-sm-4 gal">
+            <img src="rad1.jpg" title="prva slika" onclick="otvori(this);">
+          </div>
+          <div class="col-sm-4 gal">
+            <img src="rad2.jpg" title="druga slika" onclick="otvori(this);">
+          </div>
+          <div class="col-sm-4 gal">
+            <img src="rad3.jpg" title="treca slika" onclick="otvori(this);">
+          </div>
+  </div>
+  <br/>
+<!--Ovde se pojavi velika slika kad se na nju klikne-->
+<div class="container slika">
+  <!--Zatvara sliku-->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <!--Otvorena, velika slika-->
+  <img id="expandedImg" style="width:100%">
+  <!--Tekst ispod slike, tu pokaze ono sto je u alt slike-->
+  <div id="imgtext"></div>
+</div>
+</div>
+<div class="container-fluid text-center">
+    <div class="row">
+      <div class="col-sm-4">
+
+      </div>
+      <div class="col-sm-4">
+          <a href="#Kontakt"><img src="dole.png" class="down"></a>
+      </div>
+      <div class="col-sm-4">
+
+      </div>
+    </div>
+  </div>
+  <br/>
+<!--Kraj nasih radova-->
 
 <!--kontakt forma-->
 <div class="container-fluid">
@@ -689,11 +836,11 @@ footer {
       <h1>Drustvene mreze</h1>
       <div class="container-fluid">
           <a href="https://www.instagram.com/badzo_web_development/" target="_blank"><img src="instagram.png"></a>
-          <a href="https://www.instagram.com/badzo_web_development/" style="text-align:center">Badzo Web development</a>
+          <a href="https://www.instagram.com/badzo_web_development/" style="text-align:center;">badzo_web_development</a>
       </div>
       <div class="container-fluid">
         <a href="" target="_blank"><img src="facebook.png"></a>
-        <a href="#" style="text-align:center">nas_facebook</a>
+        <a href="#" style="text-align:center">Badzo Web Development</a>
       </div>
       <div class="container-fluid">
         <a href="https://www.linkedin.com/in/branislav-vu%C4%8Denovi%C4%87-446612173/" target="_blank"><img id="bane" src="linkedin.png"></a>
