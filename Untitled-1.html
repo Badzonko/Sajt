@@ -40,6 +40,20 @@ body{
 #logo_top{
   width: 50%;
 }
+.dropdown-item{
+  color:white;
+  opacity: 0.6;
+}
+.dropdown-item:hover{
+  color:white;
+  opacity:0.8;
+  background-color:#333333;
+  border-radius: 8px;
+}
+.dropdown-item:active{
+  color:white;
+  opacity:1;
+}
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
@@ -227,7 +241,8 @@ a:focus, a:hover {
 
 @media only screen and (max-width: 1100px){
   #dambo {
-    visibility: hidden;
+    
+    display:none;
 
   }
   .card{
@@ -448,6 +463,8 @@ footer {
   margin-top: 15px;
   margin-bottom: -5px;
 }
+
+
   </style>
 
   <body>
@@ -474,9 +491,22 @@ footer {
             <li class="nav-item active">
               <a class="nav-link" href="#">Pocetna</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Ponuda">Ponuda</a>
+
+
+<!--DROPDOWN POCETAK -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Ponuda
+              </a>
+              <div class="navbar-dark bg-dark dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item"  href="#web">Web dizajn</a>
+                <a class="dropdown-item"  href="#logograf">Logo i graficki dizajn</a>
+                <a class="dropdown-item"  href="#slik">Obrada slika</a>
+              </div>
             </li>
+<!--DROPDOWN KRAJ-->
+
+
             <li class="nav-item">
               <a class="nav-link" href="#Onama">O nama</a>
             </li>
@@ -570,7 +600,7 @@ footer {
     <div class="container-fluid text-center">
       <div class="row">
         <div class="col-sm-12">
-          <h1>Web dizajn</h1>
+          <h1 id="web">Web dizajn</h1>
           <hr style="width:45%"/>
         </div>
       </div>
@@ -651,31 +681,128 @@ footer {
               </div>
             </div>
         </div>
+
         <div class="container-fluid text-center">
+            <h1 id="logograf">Logo i graficki dizajn</h1>
+            <hr style="width:45%;"/>
           <div class="row">
-            <div class="col-sm-12">
-              <h1>Logo i graficki dizajn</h1>
-              <hr style="width:45%"/>
-              <p>tekst neki dok ne smislim sta ce ovde stojati</p>
-              <p>tekst neki dok ne smislim sta ce ovde stojati</p>
-              <p>tekst neki dok ne smislim sta ce ovde stojati</p>
-              <p>tekst neki dok ne smislim sta ce ovde stojati</p>
-              <p>tekst neki dok ne smislim sta ce ovde stojati</p>
-              <br/>
+            <div class="col-sm-4">
+              
+                <div>
+                    <img  src="logograf.png" style="height:423px; width: 420px;  border-radius: 7px;">
+                    
+                  </div>
+            
+            </div>
+            <div class="col-sm-8">
+                <table class="table table-striped table-dark" style="border-bottom-left-radius:7px;
+                border-bottom-right-radius:7px;">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nesto</th>
+                        <th scope="col">Simple logo</th>
+                        <th scope="col">Premium logo</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>opis1</td>
+                        <td><img src="icons8-ok-48.png"/></td>
+                        <td><img src="icons8-ok-48.png"/></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>opis2</td>
+                        <td><img src="icons8-ok-48.png"/></td>
+                        <td><img src="icons8-ok-48.png"/></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>opis3</td>
+                        <td><img src="icons8-cancel-48.png"/></td>
+                        <td><img src="icons8-ok-48.png"/></td>
+                      </tr>
+                      <tr>
+                          <th scope="row">4</th>
+                          <td>opis4</td>
+                          <td><img src="icons8-cancel-48.png"/></td>
+                          <td><img src="icons8-ok-48.png"/></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>opis5</td>
+                            <td><img src="icons8-cancel-48.png"/></td>
+                            <td><img src="icons8-ok-48.png"/></td>
+                          </tr>
+                      
+                    </tbody>
+                  </table>
+              
             </div>
           </div>
         </div>
-
+        <br/>
         <div class="container-fluid text-center">
+            <h1 id="slik">Obrada slika</h1>
+            <hr style="width:45%;" />
           <div class="row">
-            <div class="col-sm-12">
-              <h1>Obrada slika</h1>
-              <hr style="width:45%"/>
-              <p>tekst neki dok ne smislim sta ce ovde stojati</p>
-              <p>tekst neki dok ne smislim sta ce ovde stojati</p>
-              <p>tekst neki dok ne smislim sta ce ovde stojati</p>
-              <p>tekst neki dok ne smislim sta ce ovde stojati</p>
-              <p>tekst neki dok ne smislim sta ce ovde stojati</p>
+            <div class="col-sm-4">
+              
+                <div>
+                    <img  src="ps2slika.jpg" style="height:423px; width: 420px;  border-radius: 7px;">
+                    
+                  </div>
+            
+            </div>
+            <div class="col-sm-8">
+
+                <table class="table table-striped table-dark" style="border-bottom-left-radius:7px;
+                border-bottom-right-radius:7px;">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nesto</th>
+                        <th scope="col">Simple obrada</th>
+                        <th scope="col">Premium obrada</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>opis1</td>
+                        <td><img src="icons8-ok-48.png"/></td>
+                        <td><img src="icons8-ok-48.png"/></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>opis2</td>
+                        <td><img src="icons8-ok-48.png"/></td>
+                        <td><img src="icons8-ok-48.png"/></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>opis3</td>
+                        <td><img src="icons8-ok-48.png"/></td>
+                        <td><img src="icons8-ok-48.png"/></td>
+                      </tr>
+                      <tr>
+                          <th scope="row">4</th>
+                          <td>opis4</td>
+                          <td><img src="icons8-cancel-48.png"/></td>
+                          <td><img src="icons8-ok-48.png"/></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>opis5</td>
+                            <td><img src="icons8-cancel-48.png"/></td>
+                            <td><img src="icons8-ok-48.png"/></td>
+                          </tr>
+                      
+                    </tbody>
+                  </table>
+              
             </div>
           </div>
         </div>
@@ -836,19 +963,19 @@ footer {
       <h1>Drustvene mreze</h1>
       <div class="container-fluid">
           <a href="https://www.instagram.com/badzo_web_development/" target="_blank"><img src="instagram.png"></a>
-          <a href="https://www.instagram.com/badzo_web_development/" style="text-align:center;">badzo_web_development</a>
+          <a href="https://www.instagram.com/badzo_web_development/" style="text-align:center;" target="_blank">badzo_web_development</a>
       </div>
       <div class="container-fluid">
-        <a href="" target="_blank"><img src="facebook.png"></a>
-        <a href="#" style="text-align:center">Badzo Web Development</a>
+        <a href="https://www.facebook.com/Badzo-Web-Development-428554537879362/" target="_blank"><img src="facebook.png"></a>
+        <a href="https://www.facebook.com/Badzo-Web-Development-428554537879362/" style="text-align:center" target="_blank">Badzo Web Development</a>
       </div>
       <div class="container-fluid">
         <a href="https://www.linkedin.com/in/branislav-vu%C4%8Denovi%C4%87-446612173/" target="_blank"><img id="bane" src="linkedin.png"></a>
-        <a href="https://www.linkedin.com/in/branislav-vu%C4%8Denovi%C4%87-446612173/"  style="text-align:center">Vucenovic Branislav</a>
+        <a href="https://www.linkedin.com/in/branislav-vu%C4%8Denovi%C4%87-446612173/"  style="text-align:center" target="_blank">Vucenovic Branislav</a>
       </div>
       <div class="container-fluid">
         <a href="https://www.linkedin.com/in/nikola-jeremic-5b4005183/" target="_blank"><img id="dzoni" src="linkedin.png"></a>
-        <a href="https://www.linkedin.com/in/nikola-jeremic-5b4005183/"  style="text-align:center">Jeremic Nikola</a>
+        <a href="https://www.linkedin.com/in/nikola-jeremic-5b4005183/"  style="text-align:center" target="_blank">Jeremic Nikola</a>
       </div>
     </div>
   </div>
