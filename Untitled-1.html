@@ -986,13 +986,26 @@ footer {
   </div>
   <br/>
 <!--Ovde se pojavi velika slika kad se na nju klikne-->
-<div class="container slika">
-  <!--Zatvara sliku-->
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <!--Otvorena, velika slika-->
-  <img id="expandedImg" style="width:100%">
-  <!--Tekst ispod slike, tu pokaze ono sto je u alt slike-->
-  <div id="imgtext"></div>
+<div class="row">
+  <div class="col-sm-4">
+    <!--prazno levo, otvorena galerija-->
+  </div>
+
+  <div class="col-sm-4">
+    <div class="container slika">
+      <!--Zatvara sliku-->
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <!--Otvorena, velika slika-->
+      <img id="expandedImg" style="width:100%">
+      <!--Tekst ispod slike, tu pokaze ono sto je u alt slike-->
+      <div id="imgtext"></div>
+    </div>
+
+  <div class="col-sm-4">
+    <!--prazno desno, otvorena galerija-->
+  </div>
+
+</div>
 </div>
 </div>
 <div class="container-fluid text-center">
