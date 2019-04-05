@@ -489,6 +489,9 @@ label, input, textarea{
 .submit {
   width: 100%;
 }
+.btn-dark{
+  transition: 0.5s;
+}
 footer {
   width: 100%;
   background-color:  #222;
@@ -547,7 +550,6 @@ footer {
   margin-top: 15px;
   margin-bottom: -5px;
 }
-
 /* centrira vertikalno(za slike u 'Ponuda') ali sve pojebe pa sam sklonio
 .vertical-center {
   margin: 0;
@@ -626,20 +628,20 @@ footer {
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active" style="background-image: url('galaksija4.jpg')">
           <div class="carousel-caption d-none d-md-block">
-            <h2 class="display-4"style="color:white">Website design</h2>
-            <p class="lead"style="color:white">Brzo,jednostavno,kreativno.</p>
+            <a href="#web"><h2 class="display-4"style="color:white">Website design</h2></a>
+            <p class="lead"style="color:white">Brzo, jednostavno, kreativno.</p>
           </div>
         </div>
         <div class="carousel-item" style="background-image: url('galaksija5.jpg')">
           <div class="carousel-caption d-none d-md-block">
-            <h2 class="display-4"style="color:white">Logo design</h2>
-            <p class="lead"style="color:white">Originalno,lako,povoljno.</p>
+            <a href="#logograf"><h2 class="display-4"style="color:white">Logo i graficki design</h2></a>
+            <p class="lead"style="color:white">Originalno, lako, povoljno.</p>
           </div>
         </div>
         <div class="carousel-item" style="background-image: url('galaksija6.jpg')">
           <div class="carousel-caption d-none d-md-block">
-            <h2 class="display-4"style="color:white">Graphic design</h2>
-            <p class="lead" style="color:white">nesto,nesto,nesto.</p>
+            <a href="#slik"<h2 class="display-4"style="color:white">Obrada slika</h2></a>
+            <p class="lead" style="color:white">Jasno, lepo, efikasno.</p>
           </div>
         </div>
       </div>
@@ -659,7 +661,7 @@ footer {
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div class="section-title mb-0">
-                      <h2 id="nzm">Treba Vam Website,logo ili obrada slike?</h2>
+                      <h2 id="nzm">Treba Vam veb-sajt, logo ili obrada slike?</h2>
                       <hr/>
                       <h3 id="nzm1">Na mestu ste gde mozete dobiti sve od jednom, i to upravo sada! </h3>
                     </div>
@@ -929,7 +931,7 @@ footer {
         <img class="card-img-top" src="jeremija.jpg" alt="Card image cap">
         <div class="card-body">
           <h1 class="card-title" id="naslov">Jeremic Nikola</h1>
-          <p class="card-text" style="text-align:justify" id="nekiTekst">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text" style="text-align:justify" id="nekiTekst">Student 3. godine poslovne informatike, entuzijasta za graficki dizajn, crtanje i obradu slika.</p>
           <a href="#demo" id="nugme" class="btn btn-info btn-block btn-dark" data-toggle="collapse" data-target="#demo">Saznaj vise</a>
           <a href="#dzoni" id="augme" style="visibility:hidden" class="btn btn-info btn-block btn-dark">Saznaj vise</a>
 
@@ -960,7 +962,7 @@ footer {
           <img class="card-img-top" src="banemija.jpg" alt="Card image cap">
           <div class="card-body">
             <h1 class="card-title" id="naslov">Vucenovic Branislav </h1>
-            <p class="card-text" style="text-align:justify" id="nekiTekst">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text" style="text-align:justify" id="nekiTekst">Student 3. godine poslovne informatike, strucan za web dizajn i programiranje.</p>
             <a href="#dimo" id="bugme" class="btn btn-info btn-block btn-dark" data-toggle="collapse">Saznaj vise</a>
             <a href="#bane" id="sugme" style="visibility:hidden" class="btn btn-info btn-block btn-dark">Saznaj vise</a>
           </div>
@@ -982,13 +984,13 @@ footer {
           <hr/>
       </div>
           <div class="col-sm-4 gal">
-            <img src="rad1.jpg" title="prva slika" onclick="otvori(this);">
+            <img src="monitor2.jpg" title="" onclick="otvori(this);">
           </div>
           <div class="col-sm-4 gal">
-            <img src="rad2.jpg" title="druga slika" onclick="otvori(this);">
+            <img src="planinazalazak.png" title="" onclick="otvori(this);">
           </div>
           <div class="col-sm-4 gal">
-            <img src="rad3.jpg" title="treca slika" onclick="otvori(this);">
+            <img src="parallax.jpg" title="" onclick="otvori(this);">
           </div>
   </div>
   <br/>
@@ -1042,7 +1044,7 @@ footer {
   </div>
   <div class="row">
     <div class="col-sm-6 ">
-      <form action="https://formspree.io/nasmejl@email.com" method="POST" class="kontaktforma"> <!--ovde stavimo nas mejl posle-->
+      <form action="https://formspree.io/badzo997@email.com" method="POST" class="kontaktforma"> <!--ovde stavimo nas mejl posle-->
         <label>
           *Ime i prezime
           <input type="text" class="fname" name="imeprezime" id="imp"> <!--fname= full name-->
@@ -1070,7 +1072,7 @@ footer {
       <h1>Drustvene mreze</h1>
       <div class="container-fluid">
           <a href="https://www.instagram.com/badzo_web_development/" target="_blank"><img src="instagram.png"></a>
-          <a href="https://www.instagram.com/badzo_web_development/" style="text-align:center;" target="_blank">badzo_web_development</a>
+          <a href="https://www.instagram.com/badzo_web_development/" style="text-align:center;" target="_blank">badzo_web_ development</a>
       </div>
       <div class="container-fluid">
         <a href="https://www.facebook.com/Badzo-Web-Development-428554537879362/" target="_blank"><img src="facebook.png"></a>
@@ -1101,7 +1103,7 @@ footer {
                 <a href="#"><img src="gore.png" class="up"></a>
             </div>
             <div class="col-sm-4">
-                <a href="mailto:nasmejl@gmail.com"><img src="gmail.png" class="mailF" title="nasmejl@gmail.com"></a> <!--slika teksta 'kontaktiraj nas' i strelice koja pokazuje na gore, kada kliknes na nju odvede te do kontakt stranice-->
+                <a href="mailto:badzo997@gmail.com"><img src="gmail.png" class="mailF" title="posalji nam e-mail"></a> <!--slika teksta 'kontaktiraj nas' i strelice koja pokazuje na gore, kada kliknes na nju odvede te do kontakt stranice-->
             </div>
         </div>
     </footer>
