@@ -61,8 +61,6 @@ body{
   color:white;
   opacity:1;
 }
-
-
 .dropdown .dropdown-menu {
   transition: all 0.5s;
   max-height: 0;
@@ -126,7 +124,7 @@ body{
 }
 #kartice {
   padding:5%;
-
+  width:100%;
 }
 .flip-card {
   background-color: transparent;
@@ -162,6 +160,24 @@ body{
   transform: rotateY(180deg);
   padding: 10px;
 }
+@media only screen and (max-width: 740px){
+  #kartice{
+    margin-left:120px;
+    margin-right: 120px;
+  }
+}
+@media only screen and (max-width: 600px){
+  #kartice{
+    margin-left:100px;
+    margin-right: 100px;
+  }
+}
+@media only screen and (max-width: 500px){
+  #kartice{
+    margin-left:60px;
+    margin-right: 60px;
+  }
+}
 .flip-card-back p {
   color: white;
 }
@@ -193,11 +209,14 @@ h3 {
 h4 {
   font-size: 20px;
 }
-h5 { font-size: 17px;
+h5 {
+  font-size: 17px;
 }
-h6 { font-size: 12px;
+h6 {
+  font-size: 12px;
 }
-p { margin: 0 0 20px;
+p {
+  margin: 0 0 20px;
   line-height: 1.7;
   color: rgb(56, 60, 63);
 }
@@ -248,6 +267,10 @@ a:focus, a:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+#paketic{
+  width:300px;
+  height:300px;
 }
 @media only screen and (max-width: 1000px){
   .flip-card{
@@ -368,7 +391,14 @@ a:focus, a:hover {
     visibility: hidden;
   }
 }
-
+@media only screen and (max-width:580px){
+  .table{
+    margin-top:5px;
+  }
+  #obradaPonudaS, #logoPonudaS{
+    margin-bottom:5px;
+  }
+}
 #nikolica{
  height: 50px;
  width: 50px;
@@ -390,6 +420,18 @@ a:focus, a:hover {
 }
 #brane, #dzrone{
   transition: 0.5s;
+  width: 100%;
+  margin:auto;
+}
+@media only screen and (min-width:1600px){
+  #brane, #dzrone{
+    width:85%;
+  }
+}
+@media only screen and (min-width:1900px){
+  #brane, #dzrone{
+    width:70%;
+  }
 }
 #brane:hover, #dzrone:hover{
   box-shadow: 2px 2px 20px grey;
@@ -693,7 +735,7 @@ footer {
     <h1 class="ponudica">Ponuda</h1>
     <hr/>
     <br/>
-  <div class="row">
+  <div class="row justify-content-center">
     <div class="container-fluid text-center">
       <div class="row">
         <div class="col-sm-12">
@@ -707,7 +749,7 @@ footer {
             <div class="flip-card-inner">
               <div class="flip-card-front">
                 <h3>Mini paket</h3>
-                  <img id="paketic" src="paketic.png" alt="Paketic" style="width:300px;height:300px;">
+                  <img id="paketic" src="paketic.png" alt="Paketic">
               </div>
               <div class="flip-card-back">
                 <h1>Mini paket</h1>
@@ -733,7 +775,7 @@ footer {
             <div class="flip-card-inner">
               <div class="flip-card-front">
                   <h3>Srednji paket</h3>
-                  <img id="paketic" src="paketic.png" alt="Paketic" style="width:300px;height:300px;">
+                  <img id="paketic" src="paketic.png" alt="Paketic">
               </div>
               <div class="flip-card-back">
                 <h1>Srednji paket</h1>
@@ -758,7 +800,7 @@ footer {
               <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <h3>Big paket</h3>
-                  <img id="paketic" src="paketic.png" alt="Paketic" style="width:300px;height:300px;">
+                  <img id="paketic" src="paketic.png" alt="Paketic">
                 </div>
                 <div class="flip-card-back">
                   <h1>Big paket</h1>
@@ -929,7 +971,7 @@ footer {
     <hr/>
   <div class="row">
     <div class="col-sm-4">
-      <div class="card" id="dzrone" style="width: 420px;">
+      <div class="card" id="dzrone">
         <img class="card-img-top" src="jeremija.jpg" alt="Card image cap">
         <div class="card-body">
           <h1 class="card-title" id="naslov">Jeremic Nikola</h1>
@@ -960,7 +1002,7 @@ footer {
   </div>
       </div>
     <div class="col-sm-4">
-        <div class="card" id="brane" style="width: 420px; margin-left:auto;">
+        <div class="card" id="brane">
           <img class="card-img-top" src="banemija.jpg" alt="Card image cap">
           <div class="card-body">
             <h1 class="card-title" id="naslov">Vucenovic Branislav </h1>
