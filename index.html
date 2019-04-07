@@ -272,6 +272,9 @@ a:focus, a:hover {
   width:300px;
   height:300px;
 }
+ol{
+  text-align:left;
+}
 @media only screen and (max-width: 1000px){
   .flip-card{
     width: 184px !important;
@@ -294,8 +297,9 @@ a:focus, a:hover {
   .flip-card-back h1{
     padding-bottom: 0px;
   }
-  .flip-card-back p{
+  .flip-card-back ol{
     visibility: hidden;
+    line-height: 150%;
   }
   #paketic{
     height: 200px !important;
@@ -735,12 +739,24 @@ footer {
     <h1 class="ponudica">Ponuda</h1>
     <hr/>
     <br/>
+    <div class="row">
+      <div class="col-sm-12">
+        <p>Za izradu sajtova, logoa i obradu slika koristimo najmodernije tehnologije: (ovde idu slike photoshopa, ilustratora, bootstrap, jquery...)</p>
+        <br/>
+      </div>
+    </div>
   <div class="row justify-content-center">
     <div class="container-fluid text-center">
       <div class="row">
         <div class="col-sm-12">
           <h1 id="web">Web dizajn</h1>
           <hr style="width:55%"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <br/>
+          <p>U svaki paket uključeni su moderan dizajn web-sajta, savršeno uklopljene boje i lepe animacije</p>
         </div>
       </div>
     </div>
@@ -754,16 +770,18 @@ footer {
               <div class="flip-card-back">
                 <h1>Mini paket</h1>
                 <ul style="visibility:hidden">
-                  <li>Lorem ipsum dolor sit amet.</li>
-                  <li>Lorem ipsum dolor sit amet.</li>
-                  <li>Lorem ipsum dolor sit amet.</li>
-                  <li>Lorem ipsum dolor sit amet.</li>
-
+                  <li>Prilagođen mobilnim uređajima</li>
+                  <li>SEO optimizacija</li>
+                  <li>Do 3 stranice</li>
+                  <li>Do 15 slika</li>
                 </ul>
                 <div style="margin-top:-60%">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Quisque sapien velit, aliquet eget commodo nec, auctor a sapien.
-                   Nam eu neque vulputate diam rhoncus faucibus. Curabitur quis varius libero. Lorem.</p>
+                  <ol>
+                    <li>Prilagođen mobilnim uređajima</li>
+                    <li>SEO optimizacija</li>
+                    <li>Do 3 stranice</li>
+                    <li>Do 15 slika</li>
+                  </ol>
                    <a class="batn" href="#Kontakt"><input type="button" class="btn btn-warning btn-light" value="Porucite" id="added"/></a>
                 </div>
                   </div>
@@ -780,15 +798,18 @@ footer {
               <div class="flip-card-back">
                 <h1>Srednji paket</h1>
                 <ul style="visibility:hidden">
-                  <li>Lorem ipsum dolor sit amet.</li>
-                  <li>Lorem ipsum dolor sit amet.</li>
-                  <li>Lorem ipsum dolor sit amet.</li>
-                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Sve iz prethodnih paketa +</li>
+                  <li>do 6 stranica</li>
+                  <li>do 100 slika</li>
+                  <li>Domen po izboru(.com .rs...)</li>
                 </ul>
                 <div style="margin-top:-60%">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Quisque sapien velit, aliquet eget commodo nec, auctor a sapien.
-                   Nam eu neque vulputate diam rhoncus faucibus. Curabitur quis varius libero. Lorem.</p>
+                  <ol>
+                    <li>Sve iz mini paketa +</li>
+                    <li>do 6 stranica i 100 slika</li>
+                    <li>Animirana galerija</li>
+                    <li>Domen po izboru(.com .rs...)</li>
+                  </ol>
                    <a class="batn" href="#Kontakt"><input type="button" class="btn btn-warning btn-light" value="Porucite" id="adding"/></a>
                 </div>
                   </div>
@@ -805,15 +826,18 @@ footer {
                 <div class="flip-card-back">
                   <h1>Big paket</h1>
                   <ul  style="visibility:hidden">
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Sve iz srednjeg paketa +</li>
+                    <li>VIše od 6 stranica i 100 slika</li>
+                    <li>Kontakt forma, login...</li>
+                    <li>I još svašta!</li>
                   </ul>
                   <div  style="margin-top:-60%">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Quisque sapien velit, aliquet eget commodo nec, auctor a sapien.
-                     Nam eu neque vulputate diam rhoncus faucibus. Curabitur quis varius libero. Lorem.</p>
+                    <ol>
+                      <li>Sve iz srednjeg paketa +</li>
+                      <li>Više od 6 stranica i 100 slika</li>
+                      <li>Kontakt forma, login...</li>
+                      <li>I još svašta!</li>
+                    </ol>
                      <a class="batn" href="#Kontakt"><input type="button" class="btn btn-warning btn-light" value="Porucite" id="add"/></a>
                   </div>
                     </div>
