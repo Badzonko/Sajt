@@ -60,4 +60,32 @@ function chg(){ //vraca boju teksta u 'paket' polju na crnu i brise default teks
     document.getElementById("pk").innerHTML="";
   }
 }
+$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket simple paket obrade slika i menja boju iz default sive u crnu
+  $("#poruci").click(function(){
+      document.getElementById("pk").style.color = "black"
+      //$('#pk').html('Simple obrada');
+      document.getElementById("pk").value = "Simple obrada";
+  });
+});
+$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket premium paket obrade slika i menja boju iz default sive u crnu
+  $("#porucii").click(function(){
+      document.getElementById("pk").style.color = "black"
+      //$('#pk').html('Premium obrada');
+      document.getElementById("pk").value = "Premium obrada";
+  });
+});
+$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket simple logo i menja boju iz default sive u crnu
+  $("#naruci").click(function(){
+      document.getElementById("pk").style.color = "black"
+      //$('#pk').html('Simple logo');
+      document.getElementById("pk").value = "Simple logo";
+  });
+});
+$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket premium logo i menja boju iz default sive u crnu
+  $("#narucii").click(function(){
+      document.getElementById("pk").style.color = "black"
+      //$('#pk').html('Premium logo');
+      document.getElementById("pk").value = "Premium logo";
+  });
+});
 
