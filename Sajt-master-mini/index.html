@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>Badžo Web</title>
+    <link rel="shortcut icon" href="ikonica.png"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -11,8 +12,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="./jscontact.js"></script>
     <script src="./galerija.js"></script>
-    
-    
+    <script src="//d.bablic.com/snippet/5cb639b1c5b60a00011e1597.js?version=3.9"></script>
+
   </head>
   <style>
 html{
@@ -607,6 +608,15 @@ footer {
   margin-top: 15px;
   margin-bottom: -5px;
 }
+.kopir{
+  transition: 0.4s;
+}
+.kopir:hover{
+  color: #CDCDCD;
+}
+.kopir:active{
+  color:#DFDFDF;
+}
 /* centrira vertikalno(za slike u 'Ponuda') ali sve pojebe pa sam sklonio
 .vertical-center {
   margin: 0;
@@ -625,7 +635,7 @@ footer {
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top sticky">
       <div class="container">
         <a class="navbar-brand" href="#logograf">
-              <img src="BadzoLogo5.png" id="kopirajt" alt="" class="logoH" >
+              <img src="BadzoLogo5.png" alt="" class="logoH" >
             </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" onclick="iksburger(this)">
               <!--<span class="navbar-toggler-icon"></span>--> <!--staticna ikonica-->
@@ -1259,12 +1269,12 @@ footer {
                 <a href="mailto:badzo997@gmail.com"><img src="gmail.png" class="mailF" title="pošalji nam e-mail"></a> <!--slika teksta 'kontaktiraj nas' i strelice koja pokazuje na gore, kada kliknes na nju odvede te do kontakt stranice-->
             </div>
         </div>
-        <div class="row">
+        <div class="row" style="margin-bottom: -3%; margin-top: 3%;">
           <div class="col-sm-4">
-            
+
           </div>
           <div class="col-sm-4">
-            <p> Copyright © 2019 <strong><a href="#kopirajt">Badžo Web Development</a></strong></p>
+            <p> Copyright © 2019 <a href="#" class="kopir"><strong>Badžo Web Development</strong></a></p>
         </div>
           <div class="col-sm-4">
 
