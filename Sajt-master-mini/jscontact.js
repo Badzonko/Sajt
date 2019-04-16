@@ -36,21 +36,21 @@ $(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani pa
   $("#add").click(function(){
       document.getElementById("pk").style.color = "black"
       //$('#pk').html('Veliki paket');
-      document.getElementById("pk").value = "Veliki paket";
+      document.getElementById("pk").value = "Big pack";
   });
 });
 $(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
   $("#adding").click(function(){
       document.getElementById("pk").style.color = "black"
       //$('#pk').html('Srednji paket');
-      document.getElementById("pk").value = "Srednji paket";
+      document.getElementById("pk").value = "Middle(srednji) pack";
   });
 });
 $(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
   $("#added").click(function(){
       document.getElementById("pk").style.color = "black"
       //$('#pk').html('Mini paket');
-      document.getElementById("pk").value = "Mali paket";
+      document.getElementById("pk").value = "Mini pack";
   });
 });
 
@@ -64,14 +64,14 @@ $(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani pa
   $("#poruci").click(function(){
       document.getElementById("pk").style.color = "black"
       //$('#pk').html('Simple obrada');
-      document.getElementById("pk").value = "Simple obrada";
+      document.getElementById("pk").value = "Simple editing(obrada)";
   });
 });
 $(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket premium paket obrade slika i menja boju iz default sive u crnu
   $("#porucii").click(function(){
       document.getElementById("pk").style.color = "black"
       //$('#pk').html('Premium obrada');
-      document.getElementById("pk").value = "Premium obrada";
+      document.getElementById("pk").value = "Premium editing(obrada)";
   });
 });
 $(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket simple logo i menja boju iz default sive u crnu
