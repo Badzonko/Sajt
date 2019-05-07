@@ -36,21 +36,21 @@ $(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani pa
   $("#add").click(function(){
       document.getElementById("pk").style.color = "black"
       //$('#pk').html('Veliki paket');
-      document.getElementById("pk").value = "Big pack (već od 199€)";
+      document.getElementById("pk").value = "Big pack ( 199€+ )";
   });
 });
 $(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
   $("#adding").click(function(){
       document.getElementById("pk").style.color = "black"
       //$('#pk').html('Srednji paket');
-      document.getElementById("pk").value = "Badžo pack (već od 119€)";
+      document.getElementById("pk").value = "Badžo pack ( 119€+ )";
   });
 });
 $(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
   $("#added").click(function(){
       document.getElementById("pk").style.color = "black"
       //$('#pk').html('Mini paket');
-      document.getElementById("pk").value = "Mini pack (već od 49€)";
+      document.getElementById("pk").value = "Mini pack ( 49€+ )";
   });
 });
 
@@ -64,27 +64,27 @@ $(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani pa
   $("#poruci").click(function(){
       document.getElementById("pk").style.color = "black"
       //$('#pk').html('Simple obrada');
-      document.getElementById("pk").value = "Simple editing (cena po dogovoru u zavisnosti od zahteva)";
+      document.getElementById("pk").value = "Simple editing";
   });
 });
 $(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket premium paket obrade slika i menja boju iz default sive u crnu
   $("#porucii").click(function(){
       document.getElementById("pk").style.color = "black"
       //$('#pk').html('Premium obrada');
-      document.getElementById("pk").value = "Premium editing (cena po dogovoru u zavisnosti od zahteva)";
+      document.getElementById("pk").value = "Premium editing";
   });
 });
 $(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket simple logo i menja boju iz default sive u crnu
   $("#naruci").click(function(){
       document.getElementById("pk").style.color = "black"
       //$('#pk').html('Simple logo');
-      document.getElementById("pk").value = "Simple logo (već od 30€)";
+      document.getElementById("pk").value = "Simple logo ( 30€+ )";
   });
 });
 $(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket premium logo i menja boju iz default sive u crnu
   $("#narucii").click(function(){
       document.getElementById("pk").style.color = "black"
       //$('#pk').html('Premium logo');
-      document.getElementById("pk").value = "Premium logo (već od 90€)";
+      document.getElementById("pk").value = "Premium logo ( 90€+ )";
   });
 });
