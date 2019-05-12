@@ -12,13 +12,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="./jscontact.js"></script>
     <script src="./galerija.js"></script>
+    <script src="./sagal.js"></script>
     <script src="//d.bablic.com/snippet/5cb639b1c5b60a00011e1597.js?version=3.9"></script>
     <meta name="description" content="Izrada web sajtova, logoa, obrada slika, Badzo web development">
-<meta name="keywords" content="Izrada sajtova, izrada sajtova, izrada sajta, povoljni sajtovi, Povoljni sajtovi, 
-Sajt jeftino, sajt jeftino, Jeftini sajtovi, jeftini sajtovi, Jeftin sajt, Jeftin sajt, web dizajn, Web dizajn, 
-Veb dizajn, veb dizajn, Vebdizajn, vebdizajn, webdesign, Webdesign, Logo design, logo design, Logo dizajn, 
+<meta name="keywords" content="Izrada sajtova, izrada sajtova, izrada sajta, povoljni sajtovi, Povoljni sajtovi,
+Sajt jeftino, sajt jeftino, Jeftini sajtovi, jeftini sajtovi, Jeftin sajt, Jeftin sajt, web dizajn, Web dizajn,
+Veb dizajn, veb dizajn, Vebdizajn, vebdizajn, webdesign, Webdesign, Logo design, logo design, Logo dizajn,
 logo dizajn, Obrada slika, obrada slika, Image editing, img editing, img edit, Img edit, Img editing, Web development,
- web development, Badzo, badzo, Badzo web, badzo web, adobe illustrator, adobe, adobe photoshop, ai, ps, developers, 
+ web development, Badzo, badzo, Badzo web, badzo web, adobe illustrator, adobe, adobe photoshop, ai, ps, developers,
  developer, illustrator, Illustrator, photoshop, Photoshop, javascript, Javascript, JavaScript, bootstrap, bootstrap 4,bootstrap 3,
  flexbox, FlexBox, css-grid, CSS-GRID, jquery, JQuery, HTML5, html5, html, css, css3, visit card, Visit Card,
   vizit kratice,
@@ -38,7 +39,7 @@ logo dizajn, Obrada slika, obrada slika, Image editing, img editing, img edit, I
       jeftine majice Sremska Mitrovica, kul majice, kul website, cool website, awesome website,izrada vizit kartica sremska mitrovica,
        izrada vizit kartica Sremska Mitrovica, Dizajn vizit kartica Sremska Mitrovica, Dizajn vizit kartica sremska mitrovica,
        business card, business cards, business card sremska mitrovica, Business cards Sremska Mitrovica, brand, branding, brendiranje,
-       brendiranje sremska mitrovica, Brendiranje Sremska Mitrovica, brendiranje Sremska Mitrovica, logo dizajn Sremska Mitrovica, 
+       brendiranje sremska mitrovica, Brendiranje Sremska Mitrovica, brendiranje Sremska Mitrovica, logo dizajn Sremska Mitrovica,
        Logo dizajn Sremska Mitrovica, Logo dizajn sremska mitrovica, izrada vebsajtova sremska mitrovica, izrada vebsajtova Sremska Mitrovica,
        izrada jeftinih sajtova Srbija, jeftini sajtovi Srbija, jeftini sajtovi Vojvodina, jeftini sajtovi Sremska Mitrovica,
         najjeftiniji sajtovi u Srbiji, Najjeftiniji sajtovi u Vojvodini, Najjeftiniji sajtovi u srbiji, Najjeftiniji vebsajtovi u srbiji,
@@ -331,7 +332,7 @@ ol{
     margin-bottom:10px !important;
   }
   .batn{
-    
+
     padding-bottom: -50% !important;
   }
   .flip-card-back ul li{
@@ -440,7 +441,7 @@ ol{
   }
 }
 @media only screen and (max-width:1000px){
- 
+
   #doleee{
     visibility: visible !important;
   }
@@ -550,6 +551,13 @@ ol{
   box-shadow: 2px 2px 20px grey;
   animation: shake 2s;
   animation-iteration-count: 1;
+}
+#jos{
+  display: flex;
+  justify-content: center;
+}
+#sakgal{
+  display:none;
 }
 #drustvene img, #drustvene a{
   width: 100px;
@@ -846,7 +854,7 @@ footer {
           <p>U svaki paket uključeni su moderan dizajn web-sajta, savršeno uklopljene boje i lepe animacije</p>
         </div>
       </div>
-   
+
     </div>
 
     <div class="col-sm-4" id="kartice">
@@ -1218,6 +1226,7 @@ footer {
           </div>
   </div>
   <br/>
+<div id="sakgal">
   <div class="row" style="text-align:center;">
     <div class="col-sm-4 gal">
       <a href="#ovdegal"><img src="kosarkasneki.jpg" title="" onclick="otvori(this);"></a>
@@ -1241,7 +1250,7 @@ footer {
       <div class="col-sm-4 gal">
           <a href="#ovdegal"><img src="badzodev.jpg" title="" onclick="otvori(this);"></a>
     </div>
-    </div>
+  </div>
   <br/>
   <div class="row" style="text-align:center;">
       <div class="col-sm-4 gal">
@@ -1296,6 +1305,7 @@ footer {
 </div>
 </div>
 </br>
+</div>
 
 <!--Ovde se pojavi velika slika kad se na nju klikne-->
 <div class="row">
@@ -1320,6 +1330,20 @@ footer {
   </div>
 
 </div>
+<br style="display:block;"/>
+<div class="row">
+  <div class="col-sm-4">
+
+  </div>
+  <div class="col-sm-4" id="jos">
+
+    <button class="btn btn-dark" onclick="prikazi();" id="txtjos">Prikaži više</button>
+  </div>
+  <div class="col-sm-4">
+
+  </div>
+</div>
+<br/>
 </div>
 <div class="container-fluid text-center">
     <div class="row">
