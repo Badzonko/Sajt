@@ -733,7 +733,31 @@ footer {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }*/
+.gallery {
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+-webkit-column-width: 33%;
+-moz-column-width: 33%;
+column-width: 33%; }
+.gallery .pics {
+-webkit-transition: all 350ms ease;
+transition: all 350ms ease; }
+.gallery .animation {
+-webkit-transform: scale(1);
+-ms-transform: scale(1);
+transform: scale(1); }
 
+@media (max-width: 450px) {
+.gallery {
+-webkit-column-count: 1;
+-moz-column-count: 1;
+column-count: 1;
+-webkit-column-width: 100%;
+-moz-column-width: 100%;
+column-width: 100%;
+}
+}
 
   </style>
 
@@ -781,7 +805,7 @@ footer {
               <a class="nav-link" href="#Onama">O nama</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Radovi.html">Radovi</a>
+              <a class="nav-link" href="Radovi.html" target="_blank">Radovi</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#Kontakt">Kontakt</a>
@@ -1265,15 +1289,17 @@ footer {
           <h1 id="Radovi">Naši Radovi</h1>
           <hr>
       </div>
-          <div class="col-sm-4 gal">
-            <a href="#ovdegal"><img src="monitor2.jpg" title="" onclick="otvori(this);"></a>
+         <div class="gallery" id="gallery">
+          <div class="mb-3 pics animation all 1">
+            <img class="img-fluid" src="logoeagle11.jpg" alt="Najjeftinija izrada logoa">
           </div>
-          <div class="col-sm-4 gal">
-            <a href="#ovdegal"><img src="planinazalazak.png" title="" onclick="otvori(this);"></a>
+          <div class="mb-3 pics animation all 1">
+            <img class="img-fluid" src="badzodev.jpg" alt="Najjeftinija izrada vizit karti">
           </div>
-          <div class="col-sm-4 gal">
-            <a href="#ovdegal"><img src="parallax.jpg" title="" onclick="otvori(this);"></a>
+          <div class="mb-3 pics animation all 1">
+            <img class="img-fluid" src="Avicii.png" alt="Jeftina izrada web sajtova">
           </div>
+         </div>
   </div>
   <br/>
 
