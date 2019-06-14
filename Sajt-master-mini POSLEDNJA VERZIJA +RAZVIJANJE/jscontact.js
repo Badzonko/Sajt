@@ -88,3 +88,24 @@ $(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani pa
       document.getElementById("pk").value = "Premium logo ( 90€+ )";
   });
 });
+$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
+  $("#prom").click(function(){
+      document.getElementById("pk").style.color = "black"
+      //$('#pk').html('Srednji paket');
+      document.getElementById("pk").value = "Premium logo discount ( 72€ )";
+  });
+});
+$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
+  $("#promo").click(function(){
+      document.getElementById("pk").style.color = "black"
+      //$('#pk').html('Srednji paket');
+      document.getElementById("pk").value = "Badzo pack discount ( 95€ )";
+  });
+});
+$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
+  $("#promot").click(function(){
+      document.getElementById("pk").style.color = "black"
+      //$('#pk').html('Srednji paket');
+      document.getElementById("pk").value = "Badzo cocktail discount ( 82€ )";
+  });
+});
