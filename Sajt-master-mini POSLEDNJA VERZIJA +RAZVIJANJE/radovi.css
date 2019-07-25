@@ -1,5 +1,6 @@
 #gallery img{
   transition: 0.3s;
+  z-index: 999;
 }
 #gallery:hover img{
   opacity: 0.6;
