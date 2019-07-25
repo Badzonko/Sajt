@@ -54,12 +54,12 @@ $(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani pa
   });
 });
 
-function chg(){ //vraca boju teksta u 'paket' polju na crnu i brise default tekst "Unesite broj..."
+/*function chg(){ //vraca boju teksta u 'paket' polju na crnu i brise default tekst "Unesite broj..."
   document.getElementById("pk").style.color = "black";
   if(document.getElementById("pk").value==="Polje nije obavezno. Unesite paket koji želite ili ga izaberite na stranici Ponuda."){
     document.getElementById("pk").innerHTML="";
   }
-}
+}*/
 $(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket simple paket obrade slika i menja boju iz default sive u crnu
   $("#poruci").click(function(){
       document.getElementById("pk").style.color = "black"
