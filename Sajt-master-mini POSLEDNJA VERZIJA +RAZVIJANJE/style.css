@@ -182,6 +182,9 @@ body{
   color:white;
   padding-bottom: 40px;
 }
+.btn-info{
+  pointer-events: none;
+}
 h2, h3, h4, h5, h6 {
   color: #25292a;
   margin: 0px 0px 10px 0px;
