@@ -5,7 +5,7 @@ body{
   z-index: 0;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font-family: 'Overpass', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   letter-spacing: 0px;
   font-size: 17px; color: #8d8f90;
   font-weight: 400;
@@ -381,7 +381,7 @@ html,html a {
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
+ font-family: 'Ubuntu', sans-serif;
 }
 
 #plans,#plans ul,#plans ul li {
@@ -588,9 +588,9 @@ body {
 
 }
 #web-sajtovi{
-  background-color: rgba(75, 24, 105, 0.78);
+  background-color: rgba(31, 27, 27, 0.267);
   color: white;
-  text-align:left;
+  text-align:center;
 }
 #web-sajtovi p{
   color: white;

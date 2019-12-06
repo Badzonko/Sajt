@@ -7,6 +7,7 @@ $(document).ready(function () {
     var email = $('.email').val()
     var message = $('.message').val()
     var fname = $('.fname').val()
+    var naplacanjae = $('.naplacanja').val()
     var statusElmImp = $('.statusImp')
     var statusElmMs = $('.statusMs')
     //statusElmImp.empty
@@ -33,26 +34,160 @@ $(document).ready(function () {
   })
 })
 $(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
+  $("#bm").click(function(){
+      document.getElementById("naplacanja").style.color = "black"
+      //$('#pk').html('Veliki paket');
+      document.getElementById("naplacanja").value = "Na osnovu pravila po kojima funkcioniše Sirmium Tag by milestone način plaćanja podrazumeva: 1. određivanje perioda za koji projekat treba da bude gotov 2. plaćanje 30% unapred za izabrani projekat i pare za domen i hosting (ukoliko je u pitanju web development) 3. Kada se odradi demo sajta ide 40% isplate 4. Nakon provere se odrade izvesne izmene ukoliko ih ima, predaje se ključ vlasniku i ide preostalih 30% novca.";
+  });
+});
+$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
+  $("#bp").click(function(){
+      document.getElementById("naplacanja").style.color = "black"
+      //$('#pk').html('Veliki paket');
+      document.getElementById("naplacanja").value = "Na osnovu pravila po kojima funkcioniše Sirmium Tag by project način plaćanja podrazumeva: 1. određivanje perioda za koji projekat treba da bude gotov 2. plaćanje ukupne cifre novca po završetku projekta.";
+  });
+});
+$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
   $("#add").click(function(){
       document.getElementById("pk").style.color = "black"
       //$('#pk').html('Veliki paket');
-      document.getElementById("pk").value = "Big pack ( 199€+ )";
+      document.getElementById("pk").value = "Reklamni website ( 299€ )";
   });
 });
+
 $(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
   $("#adding").click(function(){
       document.getElementById("pk").style.color = "black"
       //$('#pk').html('Srednji paket');
-      document.getElementById("pk").value = "Badžo pack ( 119€+ )";
+      document.getElementById("pk").value = "Portfolio website ( 399€ )";
   });
 });
 $(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
   $("#added").click(function(){
       document.getElementById("pk").style.color = "black"
       //$('#pk').html('Mini paket');
-      document.getElementById("pk").value = "Mini pack ( 49€+ )";
+      document.getElementById("pk").value = "Biznis website ( 599€ )";
   });
 });
+$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
+  $("#addd").click(function(){
+      document.getElementById("pk").style.color = "black"
+      //$('#pk').html('Mini paket');
+      document.getElementById("pk").value = "E-commerce website ( 799€ )";
+  });
+});
+$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
+  $("#addapp").click(function(){
+      document.getElementById("pk").style.color = "black"
+      //$('#pk').html('Mini paket');
+      document.getElementById("pk").value = "Reklamna web application ( 399€ )";
+  });
+});
+$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
+  $("#addingapp").click(function(){
+      document.getElementById("pk").style.color = "black"
+      //$('#pk').html('Mini paket');
+      document.getElementById("pk").value = "Biznis web application ( 599€ )";
+  });
+});
+$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
+  $("#addedapp").click(function(){
+      document.getElementById("pk").style.color = "black"
+      //$('#pk').html('Mini paket');
+      document.getElementById("pk").value = "Media web application ( 899€ )";
+  });
+});
+$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
+  $("#adddapp").click(function(){
+      document.getElementById("pk").style.color = "black"
+      //$('#pk').html('Mini paket');
+      document.getElementById("pk").value = "E-commerce web application ( 999€ )";
+  });
+});
+$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
+  $("#addcms").click(function(){
+      document.getElementById("pk").style.color = "black"
+      //$('#pk').html('Mini paket');
+      document.getElementById("pk").value = "Reklamni cms website ( 199€ )";
+  });
+});
+$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
+  $("#addingcms").click(function(){
+      document.getElementById("pk").style.color = "black"
+      //$('#pk').html('Mini paket');
+      document.getElementById("pk").value = "Portfolio cms website ( 299€ )";
+  });
+});
+$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
+  $("#addedcms").click(function(){
+      document.getElementById("pk").style.color = "black"
+      //$('#pk').html('Mini paket');
+      document.getElementById("pk").value = "Biznis cms website ( 399€ )";
+  });
+});
+$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
+  $("#adddcms").click(function(){
+      document.getElementById("pk").style.color = "black"
+      //$('#pk').html('Mini paket');
+      document.getElementById("pk").value = "Media cms website ( 699€ )";
+  });
+});
+$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
+  $("#addlogo").click(function(){
+      document.getElementById("pk").style.color = "black"
+      //$('#pk').html('Mini paket');
+      document.getElementById("pk").value = "Logo ( 150€ )";
+  });
+});
+$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
+  $("#addbr").click(function(){
+      document.getElementById("pk").style.color = "black"
+      //$('#pk').html('Mini paket');
+      document.getElementById("pk").value = "Brochure ( 40€ )";
+  });
+});
+
+$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
+  $("#addlp").click(function(){
+      document.getElementById("pk").style.color = "black"
+      //$('#pk').html('Mini paket');
+      document.getElementById("pk").value = "Low poly ( 30€ )";
+  });
+});
+$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
+  $("#addps").click(function(){
+      document.getElementById("pk").style.color = "black"
+      //$('#pk').html('Mini paket');
+      document.getElementById("pk").value = "Poster ( 60€ )";
+  });
+});
+$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
+  $("#addbook").click(function(){
+      document.getElementById("pk").style.color = "black"
+      //$('#pk').html('Mini paket');
+      document.getElementById("pk").value = "Book cover ( 80€ )";
+  });
+});
+$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
+  $("#addbc").click(function(){
+      document.getElementById("pk").style.color = "black"
+      //$('#pk').html('Mini paket');
+      document.getElementById("pk").value = "Business card ( 70€ )";
+  });
+});
+$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
+  $("#addaa").click(function(){
+      document.getElementById("pk").style.color = "black"
+      //$('#pk').html('Mini paket');
+      document.getElementById("pk").value = "Animated ad ( 250€ )";
+  });
+});
+
+
+
+
+
+
 
 /*function chg(){ //vraca boju teksta u 'paket' polju na crnu i brise default tekst "Unesite broj..."
   document.getElementById("pk").style.color = "black";
@@ -60,52 +195,4 @@ $(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani pa
     document.getElementById("pk").innerHTML="";
   }
 }*/
-$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket simple paket obrade slika i menja boju iz default sive u crnu
-  $("#poruci").click(function(){
-      document.getElementById("pk").style.color = "black"
-      //$('#pk').html('Simple obrada');
-      document.getElementById("pk").value = "Simple editing";
-  });
-});
-$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket premium paket obrade slika i menja boju iz default sive u crnu
-  $("#porucii").click(function(){
-      document.getElementById("pk").style.color = "black"
-      //$('#pk').html('Premium obrada');
-      document.getElementById("pk").value = "Premium editing";
-  });
-});
-$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket simple logo i menja boju iz default sive u crnu
-  $("#naruci").click(function(){
-      document.getElementById("pk").style.color = "black"
-      //$('#pk').html('Simple logo');
-      document.getElementById("pk").value = "Simple logo ( 30€+ )";
-  });
-});
-$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket premium logo i menja boju iz default sive u crnu
-  $("#narucii").click(function(){
-      document.getElementById("pk").style.color = "black"
-      //$('#pk').html('Premium logo');
-      document.getElementById("pk").value = "Premium logo ( 90€+ )";
-  });
-});
-$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
-  $("#prom").click(function(){
-      document.getElementById("pk").style.color = "black"
-      //$('#pk').html('Srednji paket');
-      document.getElementById("pk").value = "Premium logo discount ( 72€ )";
-  });
-});
-$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
-  $("#promo").click(function(){
-      document.getElementById("pk").style.color = "black"
-      //$('#pk').html('Srednji paket');
-      document.getElementById("pk").value = "Badzo pack discount ( 95€ )";
-  });
-});
-$(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu
-  $("#promot").click(function(){
-      document.getElementById("pk").style.color = "black"
-      //$('#pk').html('Srednji paket');
-      document.getElementById("pk").value = "Badzo cocktail discount ( 82€ )";
-  });
-});
+
