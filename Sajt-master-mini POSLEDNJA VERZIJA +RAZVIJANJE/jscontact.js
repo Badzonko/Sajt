@@ -7,7 +7,7 @@ $(document).ready(function () {
     var email = $('.email').val()
     var message = $('.message').val()
     var fname = $('.fname').val()
-    var naplacanjae = $('.naplacanja').val()
+  
     var statusElmImp = $('.statusImp')
     var statusElmMs = $('.statusMs')
     //statusElmImp.empty
@@ -20,7 +20,7 @@ $(document).ready(function () {
       alert('Unesite puno ime i prezime!')
       document.getElementById("imp").style.border= "1px solid red"
     }
-
+ 
 
     if(message.length> 20) { //ako sadrzaj poruke ima bar 20 karaktera ok je, polje dobija zeleni border
       document.getElementById("ms").style.border= "1px solid green"
@@ -143,7 +143,7 @@ $(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani pa
   $("#addbr").click(function(){
       document.getElementById("pk").style.color = "black"
       //$('#pk').html('Mini paket');
-      document.getElementById("pk").value = "Brochure ( 40€ )";
+      document.getElementById("pk").value = "Brochure ( 40€ - 70€ )";
   });
 });
 
@@ -151,7 +151,7 @@ $(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani pa
   $("#addlp").click(function(){
       document.getElementById("pk").style.color = "black"
       //$('#pk').html('Mini paket');
-      document.getElementById("pk").value = "Low poly ( 30€ )";
+      document.getElementById("pk").value = "Low poly ( 20€ - 60€ )";
   });
 });
 $(document).ready(function(){ //u paket polje kontakta forme upisuje izabrani paket i menja boju iz default sive u crnu

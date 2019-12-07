@@ -124,7 +124,7 @@ body{
 h2, h3, h4, h5, h6 {
   color: #25292a;
   margin: 0px 0px 10px 0px;
-  font-family: 'Overpass', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   letter-spacing: -1px;
   line-height: 1;
@@ -594,7 +594,7 @@ body {
 }
 #web-sajtovi p{
   color: white;
- font-family: 'Courier New', Courier, monospace;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .gal img{
