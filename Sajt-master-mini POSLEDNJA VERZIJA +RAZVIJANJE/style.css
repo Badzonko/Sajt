@@ -12,6 +12,9 @@ body{
   line-height: 32px;
   background-color:  #efefef;
 }
+.visibility{
+  visibility: hidden;
+}
 .logoH {
   width: 35px;
   margin-top: -5px;
