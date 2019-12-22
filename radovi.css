@@ -1,0 +1,46 @@
+#gallery img{
+  transition: 0.3s;
+  z-index: 999;
+}
+#gallery:hover img{
+  opacity: 0.6;
+}
+#gallery img:hover{
+  opacity: 1;
+  box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.3);
+}
+.wsirmium{
+  padding-bottom: 35px;
+}
+.wsirmium iframe{
+  width:50vw;
+  height: 50vh;
+  border-radius: 5px;
+  border: 0px solid;
+  resize: both;
+  transition: 0.3s;
+}
+.wsirmium iframe:hover{
+  box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.3);
+}
+.mobsajtr{
+  display:none;
+}
+.mobsajtr img{
+  max-width: 75%;
+  transition: 0.3s;
+}
+.mobsajtr img:hover{
+  box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.3);
+}
+@media only screen and (max-width:976px){
+  .wsirmium iframe{
+    display: none;
+  }
+  .vp .btn{
+    display:none;
+  }
+  .mobsajtr{
+    display: block;
+  }
+}
