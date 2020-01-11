@@ -1,8 +1,0 @@
-#gallery img{
-  transition: 0.5s;
-  z-index: 999;
-}
-#gallery img:hover{
-  opacity: 1;
-  border: solid transparent 7px;
-}

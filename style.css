@@ -12,6 +12,9 @@ body{
   line-height: 32px;
   background-color:  #efefef;
 }
+.hiden{
+  visibility: hidden;
+}
 .logoH {
   width: 35px;
   margin-top: -5px;
@@ -924,4 +927,9 @@ column-count: 1;
 -moz-column-width: 100%;
 column-width: 100%;
 }
+}
+.rowgrid{
+ display:grid;
+ grid-template-columns: auto ;
+ grid-gap:50px;
 }
